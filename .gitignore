@@ -35,3 +35,4 @@ notes.txt
 
 .coveralls.yml
 .nyc_output
+package-lock.json
