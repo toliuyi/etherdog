@@ -33,6 +33,18 @@ var disableDebugTools = gutil.env.disableDebugTools
 var debug = gutil.env.debug
 
 
+//etherdog
+//copy images
+gulp.task('copy:EDImages', copyTask({
+  source: './etherdog/img/',
+  destinations: [
+    './dist/firefox/images',
+    './dist/chrome/images',
+    './dist/edge/images',
+    './dist/opera/images',
+  ],
+}))
+
 // browser reload
 
 gulp.task('dev:reload', function() {
@@ -303,7 +315,7 @@ gulp.task('apply-prod-environment', function(done) {
 
 gulp.task('dev', gulp.series('build:scss', 'dev:js', 'copy', gulp.parallel('watch:scss', 'copy:watch', 'dev:reload')))
 
-gulp.task('build', gulp.series('clean', 'build:scss', gulp.parallel('build:js', 'copy')))
+gulp.task('build', gulp.series('clean', 'build:scss', gulp.parallel('build:js', 'copy'), 'copy:EDImages'))
 gulp.task('dist', gulp.series('apply-prod-environment', 'build', 'zip'))
 
 // task generators
