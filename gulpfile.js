@@ -460,18 +460,8 @@ gulp.task('build:mascara',
   )
 )
 
-<<<<<<< HEAD
 gulp.task('build', gulp.series('clean', 'build:scss', gulp.parallel('build:js', 'copy'), 'copy:EDImages'))
 gulp.task('dist', gulp.series('apply-prod-environment', 'build', 'zip'))
-=======
-gulp.task('dist',
-  gulp.series(
-    'apply-prod-environment',
-    'build',
-    'zip'
-  )
-)
->>>>>>> d699c9b8b44813f40362a3da7953ac5ce81a969f
 
 // task generators
 
