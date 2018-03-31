@@ -39,6 +39,7 @@ function reduceMetamask (state, action) {
       maxModeOn: false,
       editingTransactionId: null,
       forceGasMin: null,
+      toNickname: '',
     },
     coinOptions: {},
     useBlockie: false,
@@ -46,6 +47,7 @@ function reduceMetamask (state, action) {
     networkEndpointType: OLD_UI_NETWORK_TYPE,
     isRevealingSeedWords: false,
     welcomeScreenSeen: false,
+    currentLocale: '',
   }, state.metamask)
 
   switch (action.type) {
@@ -238,7 +240,8 @@ function reduceMetamask (state, action) {
       return extend(metamaskState, {
         send: {
           ...metamaskState.send,
-          to: action.value,
+          to: action.value.to,
+          toNickname: action.value.nickname,
         },
       })
 
@@ -353,6 +356,11 @@ function reduceMetamask (state, action) {
     case actions.CLOSE_WELCOME_SCREEN:
       return extend(metamaskState, {
         welcomeScreenSeen: true,
+      })
+
+    case action.SET_CURRENT_LOCALE:
+      return extend(metamaskState, {
+        currentLocale: action.value,
       })
 
     default:

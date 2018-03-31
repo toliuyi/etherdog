@@ -2,9 +2,9 @@ const inherits = require('util').inherits
 const Component = require('react').Component
 const connect = require('react-redux').connect
 const h = require('react-hyperscript')
+const PropTypes = require('prop-types')
 const actions = require('./actions')
 const classnames = require('classnames')
-const t = require('../i18n')
 
 // mascara
 const MascaraFirstTime = require('../../mascara/src/app/first-time').default
@@ -46,7 +46,12 @@ const QrView = require('./components/qr-code')
 // Global Modals
 const Modal = require('./components/modals/index').Modal
 
+App.contextTypes = {
+  t: PropTypes.func,
+}
+
 module.exports = connect(mapStateToProps, mapDispatchToProps)(App)
+
 
 inherits(App, Component)
 function App () { Component.call(this) }
@@ -289,13 +294,13 @@ App.prototype.renderAppBar = function () {
             h('img.metafox-icon', {
               height: 42,
               width: 42,
-              src: '/images/metamask-fox.svg',
+              src: './images/metamask-fox.svg',
             }),
 
             // metamask name
             h('.flex-row', [
-              h('h1', t('appName')),
-              h('div.beta-label', t('beta')),
+              h('h1', this.context.t('appName')),
+              h('div.beta-label', this.context.t('beta')),
             ]),
           ]),
 
@@ -386,7 +391,7 @@ App.prototype.renderPrimary = function () {
     isUnlocked,
   } = props
   const isMascaraOnboarding = isMascara && isOnboarding
-  const isBetaUIOnboarding = betaUI && isOnboarding && !props.isPopup && !isRevealingSeedWords
+  const isBetaUIOnboarding = betaUI && isOnboarding
 
   if (!welcomeScreenSeen && betaUI && !isInitialized && !isUnlocked) {
     return h(WelcomeScreen)
@@ -397,7 +402,7 @@ App.prototype.renderPrimary = function () {
   }
 
   // notices
-  if (!props.noActiveNotices) {
+  if (!props.noActiveNotices && !betaUI) {
     log.debug('rendering notice screen for unread notices.')
     return h(NoticeScreen, {
       notice: props.lastUnreadNotice,
@@ -418,7 +423,7 @@ App.prototype.renderPrimary = function () {
     return h(HDRestoreVaultScreen, {key: 'HDRestoreVaultScreen'})
   } else if (!props.isInitialized && !props.isUnlocked && !isRevealingSeedWords) {
     log.debug('rendering menu screen')
-    return props.isPopup
+    return !betaUI
       ? h(OldUIInitializeMenuScreen, {key: 'menuScreenInit'})
       : h(InitializeMenuScreen, {key: 'menuScreenInit'})
   }
@@ -557,15 +562,15 @@ App.prototype.getConnectingLabel = function () {
   let name
 
   if (providerName === 'mainnet') {
-    name = t('connectingToMainnet')
+    name = this.context.t('connectingToMainnet')
   } else if (providerName === 'ropsten') {
-    name = t('connectingToRopsten')
+    name = this.context.t('connectingToRopsten')
   } else if (providerName === 'kovan') {
-    name = t('connectingToRopsten')
+    name = this.context.t('connectingToRopsten')
   } else if (providerName === 'rinkeby') {
-    name = t('connectingToRinkeby')
+    name = this.context.t('connectingToRinkeby')
   } else {
-    name = t('connectingToUnknown')
+    name = this.context.t('connectingToUnknown')
   }
 
   return name
@@ -578,15 +583,15 @@ App.prototype.getNetworkName = function () {
   let name
 
   if (providerName === 'mainnet') {
-    name = t('mainnet')
+    name = this.context.t('mainnet')
   } else if (providerName === 'ropsten') {
-    name = t('ropsten')
+    name = this.context.t('ropsten')
   } else if (providerName === 'kovan') {
-    name = t('kovan')
+    name = this.context.t('kovan')
   } else if (providerName === 'rinkeby') {
-    name = t('rinkeby')
+    name = this.context.t('rinkeby')
   } else {
-    name = t('unknownNetwork')
+    name = this.context.t('unknownNetwork')
   }
 
   return name

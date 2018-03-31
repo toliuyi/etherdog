@@ -171,6 +171,9 @@
   "customGas": {
     "message": "Customize Gas"
   },
+  "customToken": {
+    "message": "Custom Token"
+  },
   "customize": {
     "message": "Customize"
   },
@@ -182,7 +185,7 @@
   },
   "decimal": {
     "message": "Decimals of Precision"
-  }, 
+  },
   "defaultNetwork": {
     "message": "The default network for Ether transactions is Main Net."
   },
@@ -232,7 +235,7 @@
   "done": {
     "message": "Done"
   },
-  "downloadStatelogs": {
+  "downloadStateLogs": {
     "message": "Download State Logs"
   },
   "dropped": {
@@ -415,6 +418,9 @@
     "message": "JSON File",
     "description": "format for importing an account"
   },
+  "keepTrackTokens": {
+    "message": "Keep track of the tokens you’ve bought with your MetaMask account."
+  },
   "kovan": {
     "message": "Kovan Test Network"
   },
@@ -423,6 +429,9 @@
   },
   "max": {
     "message": "Max"
+  },
+  "learnMore": {
+    "message": "Learn more."
   },
   "lessThanMax": {
     "message": "must be less than or equal to $1.",
@@ -564,6 +573,9 @@
   "pleaseReviewTransaction": {
     "message": "Please review your transaction."
   },
+  "popularTokens": {
+    "message": "Popular Tokens"
+  },
   "privacyMsg": {
     "message": "Privacy Policy"
   },
@@ -659,6 +671,12 @@
   "save": {
     "message": "Save"
   },
+  "reprice_title": {
+    "message": "Reprice Transaction"
+  },
+  "reprice_subtitle": {
+    "message": "Increase your gas price to attempt to overwrite and speed up your transaction"
+  },
   "saveAsFile": {
     "message": "Save as File",
     "description": "Account export process"
@@ -701,6 +719,9 @@
   },
   "onlySendToEtherAddress": {
     "message": "Only send ETH to an Ethereum address."
+  },
+  "searchTokens": {
+    "message": "Search Tokens"
   },
   "sendTokensAnywhere": {
     "message": "Send Tokens to anyone with an Ethereum account"
@@ -869,7 +890,7 @@
   },
   "visitWebSite": {
     "message": "Visit our web site"
-  }, 
+  },
   "warning": {
     "message": "Warning"
   },
