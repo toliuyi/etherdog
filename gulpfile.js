@@ -44,18 +44,6 @@ const commonPlatforms = [
   ...browserPlatforms
 ]
 
-//etherdog
-//copy images
-gulp.task('copy:EDImages', copyTask({
-  source: './etherdog/img/',
-  destinations: [
-    './dist/firefox/images',
-    './dist/chrome/images',
-    './dist/edge/images',
-    './dist/opera/images',
-  ],
-}))
-
 // browser reload
 
 gulp.task('dev:reload', function() {
@@ -426,6 +414,14 @@ gulp.task('dev:mascara',
   )
 )
 
+gulp.task('EDCopyImages',function(){
+  return gulp.src('./etherdog/img/**/*').pipe(gulp.dest('./dist/chrome/images'));
+})
+
+gulp.task('EDCopyLocal',function(){
+  return gulp.src('./etherdog/local/**/*').pipe(gulp.dest('./dist/chrome/_locales'));
+})
+
 gulp.task('build',
   gulp.series(
     'clean',
@@ -434,9 +430,14 @@ gulp.task('build',
       'build:extension:js',
       'build:mascara:js',
       'copy'
+    ),
+    gulp.parallel(
+      'EDCopyImages',
+      'EDCopyLocal'
     )
   )
 )
+
 
 gulp.task('build:extension',
   gulp.series(
@@ -460,8 +461,13 @@ gulp.task('build:mascara',
   )
 )
 
-gulp.task('build', gulp.series('clean', 'build:scss', gulp.parallel('build:js', 'copy'), 'copy:EDImages'))
-gulp.task('dist', gulp.series('apply-prod-environment', 'build', 'zip'))
+gulp.task('dist',
+  gulp.series(
+    'apply-prod-environment',
+    'build',
+    'zip'
+  )
+)
 
 // task generators
 
