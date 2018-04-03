@@ -11,7 +11,8 @@ class PreferencesController {
       tokens: [],
       useBlockie: false,
       featureFlags: {},
-      currentLocale: opts.initLangCode,
+//      currentLocale: opts.initLangCode,
+      currentLocale: 'zh_CN',
     }, opts.initState)
     this.store = new ObservableStore(initState)
   }
