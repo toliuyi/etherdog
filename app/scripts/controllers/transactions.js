@@ -185,14 +185,15 @@ module.exports = class TransactionController extends EventEmitter {
 
   async addUnapprovedTransaction (txParams) {
     // validate
-    await this.txGasUtil.validateTxParams(txParams)
+    this._validateTxParams(txParams)
+    this._normalizeTxParams(txParams)
     // construct txMeta
-    const txMeta = this.txStateManager.generateTxMeta({txParams})
+    let txMeta = this.txStateManager.generateTxMeta({txParams})
     this.addTx(txMeta)
     this.emit('newUnapprovedTx', txMeta)
     // add default tx params
     try {
-      await this.addTxDefaults(txMeta)
+      txMeta = await this.addTxDefaults(txMeta)
     } catch (error) {
       console.log(error)
       this.txStateManager.setTxStatusFailed(txMeta.id, error)
@@ -312,6 +313,61 @@ module.exports = class TransactionController extends EventEmitter {
 //
 //           PRIVATE METHODS
 //
+
+  _normalizeTxParams (txParams) {
+    delete txParams.chainId
+
+    if ( !txParams.to ) {
+      delete txParams.to
+    } else {
+      txParams.to = ethUtil.addHexPrefix(txParams.to)
+    }
+    txParams.from = ethUtil.addHexPrefix(txParams.from).toLowerCase()
+
+    if (!txParams.data) {
+      delete txParams.data
+    } else {
+      txParams.data = ethUtil.addHexPrefix(txParams.data)
+    }
+
+    if (txParams.value) txParams.value = ethUtil.addHexPrefix(txParams.value)
+
+    if (txParams.gas) txParams.gas = ethUtil.addHexPrefix(txParams.gas)
+    if (txParams.gasPrice) txParams.gas = ethUtil.addHexPrefix(txParams.gas)
+  }
+
+  _validateTxParams (txParams) {
+    this._validateFrom(txParams)
+    this._validateRecipient(txParams)
+    if ('value' in txParams) {
+      const value = txParams.value.toString()
+      if (value.includes('-')) {
+        throw new Error(`Invalid transaction value of ${txParams.value} not a positive number.`)
+      }
+
+      if (value.includes('.')) {
+        throw new Error(`Invalid transaction value of ${txParams.value} number must be in wei`)
+      }
+    }
+  }
+
+  _validateFrom (txParams) {
+    if ( !(typeof txParams.from === 'string') ) throw new Error(`Invalid from address ${txParams.from} not a string`)
+    if (!ethUtil.isValidAddress(txParams.from)) throw new Error('Invalid from address')
+  }
+
+  _validateRecipient (txParams) {
+    if (txParams.to === '0x' || txParams.to === null ) {
+      if (txParams.data) {
+        delete txParams.to
+      } else {
+        throw new Error('Invalid recipient address')
+      }
+    } else if ( txParams.to !== undefined && !ethUtil.isValidAddress(txParams.to) ) {
+      throw new Error('Invalid recipient address')
+    }
+    return txParams
+  }
 
   _markNonceDuplicatesDropped (txId) {
     this.txStateManager.setTxStatusConfirmed(txId)
