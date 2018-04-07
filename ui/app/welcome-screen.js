@@ -31,16 +31,16 @@ class WelcomeScreen extends Component {
             height: '225',
           }),
 
-          h('div.welcome-screen__info__header', 'Welcome to MetaMask Beta'),
+          h('div.welcome-screen__info__header', '欢迎使用以太狗'),
 
-          h('div.welcome-screen__info__copy', 'MetaMask is a secure identity vault for Ethereum.'),
+          h('div.welcome-screen__info__copy', '以太狗是安全的以太坊身份验证软件。'),
 
-          h('div.welcome-screen__info__copy', `It allows you to hold ether & tokens,
-            and serves as your bridge to decentralized applications.`),
+          h('div.welcome-screen__info__copy', `通过以太狗可以持有使用以太坊和基于以太坊的代币，
+          也可以与分布式应用（Dapp)交互。`),
 
           h('button.welcome-screen__button', {
             onClick: this.initiateAccountCreation,
-          }, 'Continue'),
+          }, '继续'),
 
         ]),
 
