@@ -233,7 +233,7 @@ SendTransactionScreen.prototype.renderFromRow = function () {
 
   return h('div.send-v2__form-row', [
 
-    h('div.send-v2__form-label', 'From:'),
+    h('div.send-v2__form-label', this.context.t('FromA')),
 
     h('div.send-v2__form-field', [
       h(FromDropdown, {
@@ -405,7 +405,7 @@ SendTransactionScreen.prototype.renderAmountRow = function () {
   return h('div.send-v2__form-row', [
 
     h('div.send-v2__form-label', [
-      'Amount:',
+      this.context.t('AmountA'),
       this.renderErrorMessage('amount'),
       !errors.amount && gasTotal && h('div.send-v2__amount-max', {
         onClick: (event) => {
