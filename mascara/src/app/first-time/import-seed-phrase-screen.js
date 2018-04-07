@@ -42,11 +42,11 @@ class ImportSeedPhraseScreen extends Component {
     let warning = null
 
     if (seedPhrase && this.parseSeedPhrase(seedPhrase).split(' ').length !== 12) {
-      warning = 'Seed Phrases are 12 words long'
+      warning = '种子备份密语是十二个单词'
     } else if (password && password.length < 8) {
-      warning = 'Passwords require a mimimum length of 8'
+      warning = '密码最少需要八位'
     } else if ((password || prevPassword) !== (confirmPassword || prevConfirmPassword)) {
-      warning = 'Confirmed password does not match'
+      warning = '两次密码不匹配'
     }
 
     if (warning) {
