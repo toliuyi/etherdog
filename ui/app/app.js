@@ -341,7 +341,7 @@ App.prototype.renderAppBar = function () {
             'alpha-warning': welcomeScreenSeen,
             'alpha-warning-welcome-screen': !welcomeScreenSeen,
           }),
-        }, 'Please be aware that this version is still under development'),
+        }, this.context.t('UnderDevelopment')),
       ]),
 
     ])
