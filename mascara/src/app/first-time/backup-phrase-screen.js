@@ -215,7 +215,7 @@ class BackupPhraseScreen extends Component {
           }}
           href="#"
         >
-          {`< Back`}
+          {`< 上一步`}
         </a>
       )
       : null
