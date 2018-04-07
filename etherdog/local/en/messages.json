@@ -905,5 +905,14 @@
   },
   "youSign": {
     "message": "You are signing"
+  },
+  "FromA": {
+    "message": "From:"
+  },
+  "AmountA": {
+    "message": "Amount:"
+  },
+  "UnderDevelopment": {
+    "message": "Please be aware that this version is still under development"
   }
 }
