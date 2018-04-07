@@ -80,18 +80,18 @@ class CreatePasswordScreen extends Component {
             </div>}
             <div className="create-password">
               <div className="create-password__title">
-                Create Password
+                创建密码
               </div>
               <input
                 className="first-time-flow__input"
                 type="password"
-                placeholder="New Password (min 8 characters)"
+                placeholder="新密码 (至少8位)"
                 onChange={e => this.setState({password: e.target.value})}
               />
               <input
                 className="first-time-flow__input create-password__confirm-input"
                 type="password"
-                placeholder="Confirm Password"
+                placeholder="确认密码"
                 onChange={e => this.setState({confirmPassword: e.target.value})}
               />
               <button
@@ -99,7 +99,7 @@ class CreatePasswordScreen extends Component {
                 disabled={!this.isValid()}
                 onClick={this.createAccount}
               >
-                Create
+                创建
               </button>
               <a
                 href=""
@@ -109,7 +109,7 @@ class CreatePasswordScreen extends Component {
                   goToImportWithSeedPhrase()
                 }}
               >
-                Import with seed phrase
+                通过种子短语导入
               </a>
               { /* }
               <a
