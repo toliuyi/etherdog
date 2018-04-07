@@ -86,7 +86,7 @@ class BackupPhraseScreen extends Component {
             <div
               className="backup-phrase__reveal-button"
             >
-              Click here to reveal secret words
+              点击此处显示备份密语
             </div>
           </div>
         )}
