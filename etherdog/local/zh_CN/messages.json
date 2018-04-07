@@ -908,9 +908,11 @@
    },
    "FromA": {
     "message": "付款账户:"
-  },
-  "AmountA": {
-    "message": "数量:"
+   },
+   "AmountA": {
+     "message": "数量:"
+   },
+   "UnderDevelopment": {
+     "message": "请注意，该版本仍在开发中。"
   }
-
 }
