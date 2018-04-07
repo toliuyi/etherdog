@@ -474,12 +474,11 @@ App.prototype.renderPrimary = function () {
               .then(() => props.dispatch(actions.setNetworkEndpoints(BETA_UI_NETWORK_TYPE)))
           },
           style: {
-            fontSize: '0.8em',
-            color: '#aeaeae',
-            textDecoration: 'underline',
+            fontSize: '1.8em',
+            color: '#000000',
             marginTop: '32px',
           },
-        }, 'Try Beta Version'),
+        }, '接受'),
       ]),
 
     ])
