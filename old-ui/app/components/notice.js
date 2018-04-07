@@ -102,16 +102,7 @@ Notice.prototype.render = function () {
         }),
       ]),
 
-      h('button', {
-        disabled,
-        onClick: () => {
-          this.setState({disclaimerDisabled: true})
-          onConfirm()
-        },
-        style: {
-          marginTop: '18px',
-        },
-      }, 'Accept'),
+
     ])
   )
 }
