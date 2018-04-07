@@ -100,25 +100,25 @@ class BackupPhraseScreen extends Component {
     return (
       <div className="backup-phrase__content-wrapper">
         <div className="backup-phrase__phrase">
-          <div className="backup-phrase__title">Secret Backup Phrase</div>
+          <div className="backup-phrase__title">备份密语</div>
           <div className="backup-phrase__body-text">
-            Your secret backup phrase makes it easy to back up and restore your account.
+          通过你的备份密语，备份和恢复你的钱包账户变得很容易。
           </div>
           <div className="backup-phrase__body-text">
-            WARNING: Never disclose your backup phrase. Anyone with this phrase can take your Ether forever.
+          警告：不要泄露备份密语。任何人用这些备份密语都可以转移你的以太坊资产。
           </div>
           {this.renderSecretWordsContainer()}
         </div>
         <div className="backup-phrase__tips">
-          <div className="backup-phrase__tips-text">Tips:</div>
+          <div className="backup-phrase__tips-text">提示:</div>
           <div className="backup-phrase__tips-text">
-            Store this phrase in a password manager like 1password.
+          推荐通过专业软件保存这些备份密语。
           </div>
           <div className="backup-phrase__tips-text">
-            Write this phrase on a piece of paper and store in a secure location. If you want even more security, write it down on multiple pieces of paper and store each in 2 - 3 different locations.
+          把这些备份密语写在一张纸上，放在一个安全的地方。如果你想更安全，把它写在多张纸上，然后把它们保存在2到3个不同的位置。
           </div>
           <div className="backup-phrase__tips-text">
-            Memorize this phrase.
+          直接记住这些备份密语。
           </div>
         </div>
         <div className="backup-phrase__next-button">
@@ -130,7 +130,7 @@ class BackupPhraseScreen extends Component {
             })}
             disabled={!isShowingSecret}
           >
-            Next
+            下一步
           </button>
           <Breadcrumbs total={3} currentIndex={1} />
         </div>
@@ -146,9 +146,9 @@ class BackupPhraseScreen extends Component {
     return (
       <div className="backup-phrase__content-wrapper">
         <div>
-          <div className="backup-phrase__title">Confirm your Secret Backup Phrase</div>
+          <div className="backup-phrase__title">确认你的备份密语</div>
           <div className="backup-phrase__body-text">
-            Please select each phrase in order to make sure it is correct.
+          请按正确的顺序选择备份密语。
           </div>
           <div className="backup-phrase__confirm-secret">
             {selectedSeeds.map(([_, word], i) => (
@@ -195,7 +195,7 @@ class BackupPhraseScreen extends Component {
             onClick={() => isValid && confirmSeedWords().then(next)}
             disabled={!isValid}
           >
-            Confirm
+            确认
           </button>
         </div>
       </div>
