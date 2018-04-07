@@ -82,7 +82,7 @@ class NoticeScreen extends Component {
                   onClick={atBottom && this.acceptTerms}
                   disabled={!atBottom}
                 >
-                  Accept
+                  接收
                 </button>
                 <Breadcrumbs total={3} currentIndex={2} />
               </div>
