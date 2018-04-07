@@ -90,21 +90,21 @@ class ImportSeedPhraseScreen extends Component {
               }}
               href="#"
             >
-              {`< Back`}
+              {`< 上一步`}
             </a>
             <div className="import-account__title">
-              Import an Account with Seed Phrase
+            用种子备份密语导入账户
             </div>
             <div className="import-account__selector-label">
-              Enter your secret twelve word phrase here to restore your vault.
+            在这里输入你的十二个备份密语单词来恢复你的钱包账户。
             </div>
             <div className="import-account__input-wrapper">
-              <label className="import-account__input-label">Wallet Seed</label>
+              <label className="import-account__input-label">钱包种子</label>
               <textarea
                 className="import-account__secret-phrase"
                 onChange={e => this.onChange({seedPhrase: e.target.value})}
                 value={this.state.seedPhrase}
-                placeholder="Separate each word with a single space"
+                placeholder="用一个空格分隔每个单词"
               />
             </div>
             <span
@@ -113,11 +113,11 @@ class ImportSeedPhraseScreen extends Component {
               {this.props.warning}
             </span>
             <div className="import-account__input-wrapper">
-              <label className="import-account__input-label">New Password</label>
+              <label className="import-account__input-label">新密码</label>
               <input
                 className="first-time-flow__input"
                 type="password"
-                placeholder="New Password (min 8 characters)"
+                placeholder="新密码 (至少8位)"
                 onChange={e => this.onChange({password: e.target.value})}
               />
             </div>
@@ -126,13 +126,13 @@ class ImportSeedPhraseScreen extends Component {
                 className={classnames('import-account__input-label', {
                   'import-account__input-label__disabled': password.length < 8,
                 })}
-              >Confirm Password</label>
+              >确认密码</label>
               <input
                 className={classnames('first-time-flow__input', {
                   'first-time-flow__input__disabled': password.length < 8,
                 })}
                 type="password"
-                placeholder="Confirm Password"
+                placeholder="确认密码"
                 onChange={e => this.onChange({confirmPassword: e.target.value})}
                 disabled={password.length < 8}
               />
@@ -142,7 +142,7 @@ class ImportSeedPhraseScreen extends Component {
               onClick={() => !importDisabled && this.onClick()}
               disabled={importDisabled}
             >
-              Import
+              导入
             </button>
           </div>
         </div>
