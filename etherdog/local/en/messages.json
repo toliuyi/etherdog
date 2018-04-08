@@ -917,5 +917,8 @@
   },
   "CurrentLanguage": {
     "message": "Current Language"
+  },
+  "EtherDogVersion": {
+    "message": "EtherDog Version"
   }
 }
