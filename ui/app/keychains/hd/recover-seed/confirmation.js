@@ -42,7 +42,7 @@ RevealSeedConfirmation.prototype.render = function () {
           padding: 6,
         },
       }, [
-        'Reveal Seed Words',
+        this.context.t('revealSeedWords'),
       ]),
 
       h('.div', {
