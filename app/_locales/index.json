@@ -14,6 +14,6 @@
   { "code": "sl", "name": "Slovenian" },
   { "code": "th", "name": "Thai" },
   { "code": "vi", "name": "Vietnamese" },
-  { "code": "zh_CN", "name": "Mandarin" },
+  { "code": "zh_CN", "name": "简体中文" },
   { "code": "zh_TW", "name": "Taiwanese" }
 ]
