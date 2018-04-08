@@ -368,7 +368,7 @@ class Settings extends Component {
         h('hr.settings__info-separator'),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://support.metamask.io',
+            href: 'https://support.etherdog.io',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('supportCenter')),
@@ -376,7 +376,7 @@ class Settings extends Component {
         ]),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://metamask.io/',
+            href: 'https://etherdog.io/',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('visitWebSite')),
@@ -385,7 +385,7 @@ class Settings extends Component {
         h('div.settings__info-link-item', [
           h('a', {
             target: '_blank',
-            href: 'mailto:help@metamask.io?subject=Feedback',
+            href: 'mailto:231799955@qq.com?subject=以太狗反馈',
           }, [
             h('span.settings__info-link', this.context.t('emailUs')),
           ]),
