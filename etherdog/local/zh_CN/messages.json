@@ -914,5 +914,8 @@
    },
    "UnderDevelopment": {
      "message": "请注意，该版本仍在开发中。"
+  },
+   "CurrentLanguage": {
+     "message": "当前语言"
   }
 }

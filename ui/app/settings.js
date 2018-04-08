@@ -112,7 +112,7 @@ class Settings extends Component {
 
     return h('div.settings__content-row', [
       h('div.settings__content-item', [
-        h('span', 'Current Language'),
+        h('span', this.context.t('CurrentLanguage')),
         h('span.settings__content-description', `${currentLocaleName}`),
       ]),
       h('div.settings__content-item', [
