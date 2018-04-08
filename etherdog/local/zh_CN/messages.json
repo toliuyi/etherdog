@@ -920,5 +920,8 @@
   },
   "EtherDogVersion": {
     "message": "以太狗 版本号"
+  },
+  "OK": {
+    "message": "好的"
   }
 }

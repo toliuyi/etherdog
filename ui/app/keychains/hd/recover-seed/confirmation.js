@@ -77,13 +77,13 @@ RevealSeedConfirmation.prototype.render = function () {
           // cancel
           h('button.primary', {
             onClick: this.goHome.bind(this),
-          }, 'CANCEL'),
+          }, this.context.t('cancel')),
 
           // submit
           h('button.primary', {
             style: { marginLeft: '10px' },
             onClick: this.revealSeedWords.bind(this),
-          }, 'OK'),
+          }, this.context.t('OK')),
 
         ]),
 

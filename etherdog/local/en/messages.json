@@ -920,5 +920,8 @@
   },
   "EtherDogVersion": {
     "message": "EtherDog Version"
+  },
+  "OK": {
+    "message": "OK"
   }
 }
