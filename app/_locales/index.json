@@ -1,4 +1,6 @@
 [
+  { "code": "zh_CN", "name": "简体中文" },
+  { "code": "zh_TW", "name": "繁體中文" },
   { "code": "de", "name": "German" },
   { "code": "en", "name": "English" },
   { "code": "es", "name": "Spanish" },
@@ -13,7 +15,6 @@
   { "code": "ru", "name": "Russian" },
   { "code": "sl", "name": "Slovenian" },
   { "code": "th", "name": "Thai" },
-  { "code": "vi", "name": "Vietnamese" },
-  { "code": "zh_CN", "name": "简体中文" },
-  { "code": "zh_TW", "name": "Taiwanese" }
+  { "code": "vi", "name": "Vietnamese" }
+
 ]
