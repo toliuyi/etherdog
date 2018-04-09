@@ -222,6 +222,6 @@ function triggerUi () {
 // On first install, open a window to MetaMask website to how-it-works.
 extension.runtime.onInstalled.addListener(function (details) {
   if ((details.reason === 'install') && (!METAMASK_DEBUG)) {
-    extension.tabs.create({url: 'https://h.etherdog.io'})
+    extension.tabs.create({url: 'https://github.com/toliuyi/etherdog/wiki/%E5%A6%82%E4%BD%95%E9%98%B2%E6%AD%A2%E4%B8%A2%E5%B8%81'})
   }
 })
