@@ -93,18 +93,18 @@ class ImportSeedPhraseScreen extends Component {
               {`< 上一步`}
             </a>
             <div className="import-account__title">
-            用种子备份密语导入账户
+            使用助记词恢复钱包
             </div>
             <div className="import-account__selector-label">
-            在这里输入你的十二个备份密语单词来恢复你的钱包账户。
+            在这里输入助记词，助记词是12-24个小写英文单词。注意钱包恢复后只显示账户1，你可以使用“添加账户”恢复后续账户。
             </div>
             <div className="import-account__input-wrapper">
-              <label className="import-account__input-label">钱包种子</label>
+              <label className="import-account__input-label">助记词</label>
               <textarea
                 className="import-account__secret-phrase"
                 onChange={e => this.onChange({seedPhrase: e.target.value})}
                 value={this.state.seedPhrase}
-                placeholder="用一个空格分隔每个单词"
+                placeholder="单词之间有1个空格"
               />
             </div>
             <span
@@ -142,7 +142,7 @@ class ImportSeedPhraseScreen extends Component {
               onClick={() => !importDisabled && this.onClick()}
               disabled={importDisabled}
             >
-              导入
+              恢复
             </button>
           </div>
         </div>

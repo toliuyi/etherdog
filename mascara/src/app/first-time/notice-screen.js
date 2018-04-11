@@ -37,6 +37,7 @@ class NoticeScreen extends Component {
     const defer = markNoticeRead(lastUnreadNotice)
       .then(() => this.setState({ atBottom: false }))
 
+    // if title translate to Chinese， test never pass.  
     if ((/terms/gi).test(lastUnreadNotice.title)) {
       defer.then(next)
     }

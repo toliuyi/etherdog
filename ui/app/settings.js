@@ -343,7 +343,7 @@ class Settings extends Component {
         h('div.settings__info-link-header', this.context.t('links')),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://metamask.io/privacy.html',
+            href: 'https://github.com/toliuyi/etherdog/wiki/Privacy',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('privacyMsg')),
@@ -351,24 +351,24 @@ class Settings extends Component {
         ]),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://metamask.io/terms.html',
+            href: 'https://github.com/toliuyi/etherdog/wiki/Terms',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('terms')),
           ]),
         ]),
-        h('div.settings__info-link-item', [
-          h('a', {
-            href: 'https://metamask.io/attributions.html',
-            target: '_blank',
-          }, [
-            h('span.settings__info-link', this.context.t('attributions')),
-          ]),
-        ]),
+        // h('div.settings__info-link-item', [
+        //   h('a', {
+        //     href: 'https://metamask.io/attributions.html',
+        //     target: '_blank',
+        //   }, [
+        //     h('span.settings__info-link', this.context.t('attributions')),
+        //   ]),
+        // ]),
         h('hr.settings__info-separator'),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://support.etherdog.io',
+            href: 'https://github.com/toliuyi/etherdog/issues',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('supportCenter')),
@@ -385,7 +385,7 @@ class Settings extends Component {
         h('div.settings__info-link-item', [
           h('a', {
             target: '_blank',
-            href: 'mailto:admin@etherdog.io?subject=以太狗反馈',
+            href: 'mailto:admin@etherdog.io?subject=以太狗使用反馈',
           }, [
             h('span.settings__info-link', this.context.t('emailUs')),
           ]),

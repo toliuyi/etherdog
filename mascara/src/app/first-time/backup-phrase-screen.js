@@ -102,17 +102,17 @@ class BackupPhraseScreen extends Component {
         <div className="backup-phrase__phrase">
           <div className="backup-phrase__title">保存助记词</div>
           <div className="backup-phrase__body-text">
-          请妥善保存您的钱包助记词，可通过以太狗、Metamask及其他支持BIP39标准的钱包软件随时恢复你的以太坊钱包。
+          请妥善保存您的钱包助记词，通过助记词可使用以太狗、Metamask及很多支持BIP39标准的钱包软件恢复你的以太坊钱包。
           </div>
           <div className="backup-phrase__body-text">
-          警告：任何人知道你的助记词，都可以随时转走你的以太坊钱包内的全部资产。
+          警告：任何人知道你的助记词，都可以随时转走以太坊钱包内的全部资产。
           </div>
           {this.renderSecretWordsContainer()}
         </div>
         <div className="backup-phrase__tips">
           <div className="backup-phrase__tips-text">保存助记词的推荐方法:</div>
           <div className="backup-phrase__tips-text">
-          将助记词清晰地抄在纸上，共抄写两份，注意一个字母都不能写错。将两份记录密封在塑料袋里，分别保存在不同地点，避免由于失火、失窃同时丢失两份记录。记录保存的位置应尽量隐秘，比如夹在书架上的书也中。不要夹在会被人借走的书里，注意记住书名。定期检查保存的助记词，如果一份损坏，立即用未损坏的抄写一份，总是保持有两个可以使用的备份记录。如果发现助记词丢失或者泄露，马上新建钱包，将老钱包的资产全部转移至新钱包，并妥善保管新钱包的助记词。
+          将助记词清晰地抄在纸上，共抄写两份，注意一个字母都不能写错。将两份记录密封在塑料袋里，分别保存在不同地点，避免由于失火、失窃同时丢失两份记录。记录保存的位置应尽量隐秘，比如夹在书架上的书页中。不要夹在会被人借走的书里，注意记住书名。定期检查保存的助记词，如果一份损坏，立即用未损坏的抄写一份，总是保持有两个可以使用的备份记录。如果发现助记词丢失或者泄露，马上新建钱包，将老钱包的资产全部转移至新钱包，并妥善保管新钱包的助记词。
           </div>
         </div>
         <div className="backup-phrase__next-button">
