@@ -307,7 +307,7 @@ ConfirmSendEther.prototype.render = function () {
   const title = txMeta.lastGasPrice ? 'Reprice Transaction' : 'Confirm'
   const subtitle = txMeta.lastGasPrice
     ? 'Increase your gas fee to attempt to overwrite and speed up your transaction'
-    : 'Please review your transaction.'
+    : this.context.t('pleaseReviewTransaction')
 
   // This is from the latest master
   // It handles some of the errors that we are not currently handling
