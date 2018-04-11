@@ -304,7 +304,7 @@ ConfirmSendEther.prototype.render = function () {
     totalInETH,
   } = this.getData()
 
-  const title = txMeta.lastGasPrice ? 'Reprice Transaction' : 'Confirm'
+  const title = txMeta.lastGasPrice ? 'Reprice Transaction' : this.context.t('confirmA')
   const subtitle = txMeta.lastGasPrice
     ? 'Increase your gas fee to attempt to overwrite and speed up your transaction'
     : this.context.t('pleaseReviewTransaction')

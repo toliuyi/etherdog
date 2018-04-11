@@ -923,5 +923,8 @@
   },
   "OK": {
     "message": "好的"
+  },
+  "confirmA": {
+    "message": "确认交易"
   }
 }
