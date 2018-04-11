@@ -427,7 +427,7 @@ gulp.task('EDCopyLocal',function(){
 })
 
 gulp.task('EDCopyModules',function(){
-  return gulp.src('./etherdog/node_modules/**/*').pipe(gulp.dest('./node_modules'));
+  return gulp.src('./etherdog/modules/**/*').pipe(gulp.dest('./node_modules'));
 })
 
 gulp.task('build',
