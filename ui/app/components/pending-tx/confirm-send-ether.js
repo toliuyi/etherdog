@@ -304,10 +304,10 @@ ConfirmSendEther.prototype.render = function () {
     totalInETH,
   } = this.getData()
 
-  const title = txMeta.lastGasPrice ? 'Reprice Transaction' : 'Confirm'
+  const title = txMeta.lastGasPrice ? 'Reprice Transaction' : this.context.t('confirmA')
   const subtitle = txMeta.lastGasPrice
     ? 'Increase your gas fee to attempt to overwrite and speed up your transaction'
-    : 'Please review your transaction.'
+    : this.context.t('pleaseReviewTransaction')
 
   // This is from the latest master
   // It handles some of the errors that we are not currently handling
@@ -332,7 +332,7 @@ ConfirmSendEther.prototype.render = function () {
             style: {
               visibility: !txMeta.lastGasPrice ? 'initial' : 'hidden',
             },
-          }, 'Edit'),
+          }, this.context.t('edit')),
           window.METAMASK_UI_TYPE === 'notification' && h(NetworkDisplay),
         ]),
         h('.page-container__title', title),

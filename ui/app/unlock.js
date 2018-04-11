@@ -46,7 +46,7 @@ UnlockScreen.prototype.render = function () {
           textTransform: 'uppercase',
           color: '#7F8082',
         },
-      }, this.context.t('appName')),
+      }, ),
 
       h('input.large-input', {
         type: 'password',

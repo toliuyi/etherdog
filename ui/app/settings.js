@@ -385,7 +385,7 @@ class Settings extends Component {
         h('div.settings__info-link-item', [
           h('a', {
             target: '_blank',
-            href: 'mailto:help@etherdog.io?subject=以太狗反馈',
+            href: 'mailto:admin@etherdog.io?subject=以太狗反馈',
           }, [
             h('span.settings__info-link', this.context.t('emailUs')),
           ]),

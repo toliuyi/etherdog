@@ -571,7 +571,7 @@
       "message": "检测到个人地址。请输入代币合约地址。"
    },
    "pleaseReviewTransaction": {
-      "message": "请检查你的交易。"
+      "message": "请仔细复核你的交易以防错误。"
    },
    "popularTokens": {
     "message": "热门代币"
@@ -923,5 +923,8 @@
   },
   "OK": {
     "message": "好的"
+  },
+  "confirmA": {
+    "message": "确认交易"
   }
 }

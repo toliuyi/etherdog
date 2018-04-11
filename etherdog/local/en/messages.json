@@ -923,5 +923,8 @@
   },
   "OK": {
     "message": "OK"
+  },
+  "confirmA": {
+    "message": "Confirm"
   }
 }
