@@ -332,7 +332,7 @@ ConfirmSendEther.prototype.render = function () {
             style: {
               visibility: !txMeta.lastGasPrice ? 'initial' : 'hidden',
             },
-          }, 'Edit'),
+          }, this.context.t('edit')),
           window.METAMASK_UI_TYPE === 'notification' && h(NetworkDisplay),
         ]),
         h('.page-container__title', title),
