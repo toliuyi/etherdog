@@ -16,12 +16,12 @@ class UniqueImageScreen extends Component {
         <div className="first-view-main">
           <div className="unique-image">
             <Identicon address={this.props.address} diameter={70} />
-            <div className="unique-image__title">你独一无二的钱包账户头像。</div>
+            <div className="unique-image__title">独一无二的钱包图片</div>
             <div className="unique-image__body-text">
-            此头像图片根据你的新账号信息通过代码编程生成。
+            此图片根据你的钱包信息自动生成，是全世界唯一的。
             </div>
             <div className="unique-image__body-text">
-            当有需要你确认的事务，你都会看到这个头像图片。
+            当有需要确认的以太坊交易，你都会看到这张图片。
             </div>
             <button
               className="first-time-flow__button"

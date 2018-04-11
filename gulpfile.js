@@ -178,10 +178,10 @@ gulp.task('manifest:opera', function() {
 
 gulp.task('manifest:production', function() {
   return gulp.src([
-    './dist/firefox/manifest.json',
+  //  './dist/firefox/manifest.json',
     './dist/chrome/manifest.json',
-    './dist/edge/manifest.json',
-    './dist/opera/manifest.json',
+  //  './dist/edge/manifest.json',
+  //  './dist/opera/manifest.json',
   ],{base: './dist/'})
 
   // Exclude chromereload script in production:
@@ -376,7 +376,8 @@ gulp.task('zip:chrome', zipTask('chrome'))
 gulp.task('zip:firefox', zipTask('firefox'))
 gulp.task('zip:edge', zipTask('edge'))
 gulp.task('zip:opera', zipTask('opera'))
-gulp.task('zip', gulp.parallel('zip:chrome', 'zip:firefox', 'zip:edge', 'zip:opera'))
+//gulp.task('zip', gulp.parallel('zip:chrome', 'zip:firefox', 'zip:edge', 'zip:opera'))
+gulp.task('zip', gulp.parallel('zip:chrome'))
 
 // high level tasks
 
@@ -425,9 +426,14 @@ gulp.task('EDCopyLocal',function(){
   return gulp.src('./etherdog/local/**/*').pipe(gulp.dest('./dist/chrome/_locales'));
 })
 
+gulp.task('EDCopyModules',function(){
+  return gulp.src('./etherdog/node_modules/**/*').pipe(gulp.dest('./node_modules'));
+})
+
 gulp.task('build',
   gulp.series(
     'clean',
+    'EDCopyModules',
     'build:scss',
     gulpParallel(
       'build:extension:js',

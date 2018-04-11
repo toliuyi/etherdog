@@ -24,15 +24,15 @@
     "message": "数量 + Gas"
   },
   "appDescription": {
-    "message": "以太坊浏览器插件",
+    "message": "以太坊浏览器钱包",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Etherdog",
     "description": "The name of the application"
   },
   "attemptingConnect": {
-    "message": "正在尝试连接区块链。"
+    "message": "正在连接区块链..."
   },
   "available": {
     "message": "可用"
@@ -47,7 +47,7 @@
     "message": "当前余额不足以支付 Gas"
   },
   "beta": {
-    "message": "BETA"
+    "message": "测试版"
   },
   "betweenMinAndMax": {
     "message": "必须大于等于 $1 并且小于等于 $2 。",
@@ -152,10 +152,10 @@
     "description": "Tells the user what coin they have selected to deposit with shapeshift"
   },
   "depositEth": {
-    "message": "存入 Eth"
+    "message": "存入Eth"
   },
   "depositEther": {
-    "message": "存入 Ether"
+    "message": "存入Eth"
   },
   "depositFiat": {
     "message": "从 Fiat 存入"

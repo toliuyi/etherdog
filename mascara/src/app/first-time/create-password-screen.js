@@ -80,7 +80,7 @@ class CreatePasswordScreen extends Component {
             </div>}
             <div className="create-password">
               <div className="create-password__title">
-                创建密码
+                新建钱包
               </div>
               <input
                 className="first-time-flow__input"
@@ -99,7 +99,7 @@ class CreatePasswordScreen extends Component {
                 disabled={!this.isValid()}
                 onClick={this.createAccount}
               >
-                创建
+                新建
               </button>
               <a
                 href=""
@@ -109,7 +109,7 @@ class CreatePasswordScreen extends Component {
                   goToImportWithSeedPhrase()
                 }}
               >
-                通过种子短语导入
+                用助记词导入原有钱包
               </a>
               { /* }
               <a

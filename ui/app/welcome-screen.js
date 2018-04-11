@@ -33,10 +33,7 @@ class WelcomeScreen extends Component {
 
           h('div.welcome-screen__info__header', '欢迎使用以太狗'),
 
-          h('div.welcome-screen__info__copy', '以太狗是安全的以太坊身份验证软件。'),
-
-          h('div.welcome-screen__info__copy', `通过以太狗可以持有使用以太坊和基于以太坊的代币，
-          也可以与分布式应用（Dapp)交互。`),
+          h('div.welcome-screen__info__copy', '以太狗是简洁易用的以太坊浏览器钱包，是基于Metamask开发的开源浏览器插件，是Metamask的中文精简版。您可以用以太狗管理以太币（ETH）和基于以太坊的代币(Token)，并操作以太坊分布式应用（Dapp)。'),
 
           h('button.welcome-screen__button', {
             onClick: this.initiateAccountCreation,

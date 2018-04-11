@@ -227,10 +227,10 @@
     "message": "直接存入"
   },
   "directDepositEther": {
-    "message": "直接存入 Ether"
+    "message": "转入Eth"
   },
   "directDepositEtherExplainer": {
-    "message": "如果你已經擁有了一些 Ether，使用直接存入功能是讓你的新錢包最快取得 Ether 的方式。"
+    "message": "如果你已经拥有一些Eth，可以从其他钱包账户转入新钱包"
   },
   "done": {
     "message": "完成"
