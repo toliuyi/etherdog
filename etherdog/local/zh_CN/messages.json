@@ -156,7 +156,7 @@
     "message": "更多地址"
   },
   "createDen": {
-    "message": "创建"
+    "message": "添加"
  },
  "crypto": {
     "message": "加密",
@@ -382,7 +382,7 @@
    },
    "imported": {
       "description": "status showing that an account has been fully loaded into the keyring",
-      "message": "已导入私钥"
+      "message": "导入地址"
    },
    "infoHelp": {
       "message": "信息及帮助"
