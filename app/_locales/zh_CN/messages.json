@@ -384,7 +384,7 @@
     "message": "新收款人"
   },
   "next": {
-    "message": "下一个"
+    "message": "下一步"
   },
   "noAddressForName": {
     "message": "此 ENS 名字还没有指定地址。"

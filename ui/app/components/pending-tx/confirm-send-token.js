@@ -434,7 +434,7 @@ ConfirmSendToken.prototype.render = function () {
         h('div.page-container__header', [
           !txMeta.lastGasPrice && h('button.confirm-screen-back-button', {
             onClick: () => editTransaction(txMeta),
-          }, this.context.t('edit')),
+          }, this.context.t('editAmount')),
           h('div.page-container__title', title),
           h('div.page-container__subtitle', subtitle),
         ]),
@@ -510,7 +510,7 @@ ConfirmSendToken.prototype.render = function () {
             // Cancel Button
             h('button.btn-cancel.page-container__footer-button.allcaps', {
               onClick: (event) => this.cancel(event, txMeta),
-            }, this.context.t('cancel')),
+            }, this.context.t('refuse')),
 
             // Accept Button
             h('button.btn-confirm.page-container__footer-button.allcaps', [this.context.t('confirm')]),

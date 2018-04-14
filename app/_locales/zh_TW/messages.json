@@ -230,7 +230,7 @@
     "message": "转入Eth"
   },
   "directDepositEtherExplainer": {
-    "message": "如果你已经拥有一些Eth，可以从其他钱包账户转入新钱包"
+    "message": "如果你已经拥有一些Eth，可以从其他钱包转入"
   },
   "done": {
     "message": "完成"

@@ -302,7 +302,7 @@ class ConfirmDeployContract extends Component {
             // Cancel Button
             h('button.btn-cancel.page-container__footer-button.allcaps', {
               onClick: event => this.cancel(event, txMeta),
-            }, this.context.t('cancel')),
+            }, this.context.t('refuse')),
 
             // Accept Button
             h('button.btn-confirm.page-container__footer-button.allcaps', {

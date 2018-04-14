@@ -317,13 +317,13 @@ class Settings extends Component {
       h('div.settings__content', [
         warning && h('div.settings__error', warning),
         this.renderCurrentConversion(),
-        this.renderCurrentLocale(),
+//        this.renderCurrentLocale(),
         // this.renderCurrentProvider(),
-        this.renderNewRpcUrl(),
-        this.renderStateLogs(),
+//        this.renderNewRpcUrl(),
+//        this.renderStateLogs(),
         this.renderSeedWords(),
-        !isMascara && this.renderOldUI(),
-        this.renderResetAccount(),
+//        !isMascara && this.renderOldUI(),
+//        this.renderResetAccount(),
         this.renderBlockieOptIn(),
       ])
     )
@@ -343,7 +343,7 @@ class Settings extends Component {
         h('div.settings__info-link-header', this.context.t('links')),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://github.com/toliuyi/etherdog/wiki/Privacy',
+            href: 'https://github.com/toliuyi/etherdog/wiki/',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('privacyMsg')),

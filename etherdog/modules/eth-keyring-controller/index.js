@@ -186,7 +186,7 @@ class KeyringController extends EventEmitter {
       switch (type) {
         case 'Simple Key Pair':
           const isNotIncluded = !accounts.find((key) => key === newAccount[0] || key === ethUtil.stripHexPrefix(newAccount[0]))
-          return (isNotIncluded) ? Promise.resolve(newAccount) : Promise.reject(new Error('The account you\'re are trying to import is a duplicate'))
+          return (isNotIncluded) ? Promise.resolve(newAccount) : Promise.reject(new Error(this.context.t('accountDup')))
         default:
           return Promise.resolve(newAccount)
       }
@@ -387,7 +387,7 @@ class KeyringController extends EventEmitter {
     const currentIdentityCount = Object.keys(identities).length + 1
     const nicknames = this.store.getState().walletNicknames || {}
     const existingNickname = nicknames[hexAddress]
-    const name = existingNickname || `账户 ${currentIdentityCount}`
+    const name = existingNickname || `地址 ${currentIdentityCount}`
     identities[hexAddress] = {
       address: hexAddress,
       name,

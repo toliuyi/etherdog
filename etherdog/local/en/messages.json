@@ -926,5 +926,14 @@
   },
   "confirmA": {
     "message": "Confirm"
+  },
+  "increaseGas": {
+    "message": "Increase your gas fee to attempt to overwrite and speed up your transaction"
+  },
+  "accountDup": {
+    "message": "The account you are trying to import is a duplicate"
+  },
+  "refuse": {
+    "message": "Refuse"
   }
 }

@@ -306,7 +306,8 @@ ConfirmSendEther.prototype.render = function () {
 
   const title = txMeta.lastGasPrice ? 'Reprice Transaction' : this.context.t('confirmA')
   const subtitle = txMeta.lastGasPrice
-    ? 'Increase your gas fee to attempt to overwrite and speed up your transaction'
+  //  ? 'Increase your gas fee to attempt to overwrite and speed up your transaction'
+    ? this.context.t('increaseGas')
     : this.context.t('pleaseReviewTransaction')
 
   // This is from the latest master
@@ -332,7 +333,7 @@ ConfirmSendEther.prototype.render = function () {
             style: {
               visibility: !txMeta.lastGasPrice ? 'initial' : 'hidden',
             },
-          }, this.context.t('edit')),
+          }, this.context.t('editAmount')),
           window.METAMASK_UI_TYPE === 'notification' && h(NetworkDisplay),
         ]),
         h('.page-container__title', title),
@@ -503,7 +504,7 @@ ConfirmSendEther.prototype.render = function () {
               clearSend()
               this.cancel(event, txMeta)
             },
-          }, this.context.t('cancel')),
+          }, this.context.t('refuse')),
 
           // Accept Button
           h('button.btn-confirm.page-container__footer-button.allcaps', [this.context.t('confirm')]),

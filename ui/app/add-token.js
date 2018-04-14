@@ -359,7 +359,7 @@ AddTokenScreen.prototype.renderTabs = function () {
           h('div.add-token__info-box__title', this.context.t('whatsThis')),
           h('div.add-token__info-box__copy', this.context.t('keepTrackTokens')),
           h('a.add-token__info-box__copy--blue', {
-            href: 'http://metamask.helpscoutdocs.com/article/16-managing-erc20-tokens',
+            href: 'https://github.com/toliuyi/etherdog/wiki/MngToken',
             target: '_blank',
           }, this.context.t('learnMore')),
         ]),
