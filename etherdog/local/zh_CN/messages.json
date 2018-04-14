@@ -24,10 +24,10 @@
       "message": "添加代币"
    },
    "amount": {
-      "message": "发送Eth"
+      "message": "发送金额"
    },
    "amountPlusGas": {
-      "message": "发送Eth+交易油费"
+      "message": "(发送金额+交易油费)"
    },
    "appDescription": {
       "description": "The description of the application",
@@ -382,7 +382,7 @@
    },
    "imported": {
       "description": "status showing that an account has been fully loaded into the keyring",
-      "message": "导入地址"
+      "message": "导入的地址"
    },
    "infoHelp": {
       "message": "信息及帮助"
@@ -910,7 +910,7 @@
     "message": "发送地址"
    },
    "AmountA": {
-     "message": "发送Eth"
+     "message": "发送金额"
    },
    "UnderDevelopment": {
      "message": "以太狗仍处于持续开发中，我们将尽力提供可靠产品。如遇到产品故障，也请您谅解。"
@@ -931,7 +931,7 @@
     "message": "尝试提高油价以加速交易执行"
   },
   "editAmount": {
-    "message": "修改发送Eth数量"
+    "message": "修改发送金额"
   },
   "accountDup": {
     "message": "导入的地址已在钱包中"
