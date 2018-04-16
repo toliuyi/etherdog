@@ -356,8 +356,8 @@ ConfirmSendEther.prototype.render = function () {
         //   `You're sending to Recipient ...${toAddress.slice(toAddress.length - 4)}`,
         // ]),
 
-        h('h3.flex-center.confirm-screen-send-amount', [`${amountInFIAT}`]),
-        h('h3.flex-center.confirm-screen-send-amount-currency', [ currentCurrency.toUpperCase() ]),
+        h('h3.flex-center.confirm-screen-send-amount', [`${totalInETH} ETH`]),
+        h('h3.flex-center.confirm-screen-send-amount-currency', ),
         h('div.flex-center.confirm-memo-wrapper', [
           h('h3.confirm-screen-send-memo', [ memo ? `"${memo}"` : '' ]),
         ]),
