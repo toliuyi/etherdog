@@ -938,6 +938,9 @@
   },
   "refuse": {
     "message": "拒绝"
+  },
+  "Increasethegas": {
+    "message": "增加你的交易油价（GWEI）。"
   }
 
 }

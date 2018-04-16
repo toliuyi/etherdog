@@ -305,7 +305,7 @@ TxListItem.prototype.render = function () {
             }
             this.resubmit()
           },
-        }, 'Increase the gas price on your transaction'),
+        }, this.context.t('Increasethegas')),
 
       ]),
 

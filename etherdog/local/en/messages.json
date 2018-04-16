@@ -935,5 +935,8 @@
   },
   "refuse": {
     "message": "Refuse"
+  },
+  "Increasethegas": {
+    "message": "Increase the gas price on your transaction"
   }
 }
