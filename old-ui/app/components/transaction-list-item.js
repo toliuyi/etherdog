@@ -154,12 +154,12 @@ TransactionListItem.prototype.render = function () {
           style: {
             paddingRight: '2px',
           },
-        }, 'Taking too long?'),
+        }, '交易确认时间太长?'),
         h('div', {
           style: {
             textDecoration: 'underline',
           },
-        }, 'Retry with a higher gas price here'),
+        }, '在这里提高油价（GWEI)重试。'),
       ]),
     ])
   )
