@@ -199,11 +199,9 @@ class ConfirmDeployContract extends Component {
 
     return (
       h('div.confirm-send-token__hero-amount-wrapper', [
-        h('h3.flex-center.confirm-screen-send-amount', `${fiatAmount}`),
-        h('h3.flex-center.confirm-screen-send-amount-currency', currentCurrency.toUpperCase()),
-        h('div.flex-center.confirm-memo-wrapper', [
-          h('h3.confirm-screen-send-memo', memo),
-        ]),
+        h('h3.flex-center.confirm-screen-send-amount', ``),
+        h('h3.flex-center.confirm-screen-send-amount-currency', ),
+        
       ])
     )
   }
