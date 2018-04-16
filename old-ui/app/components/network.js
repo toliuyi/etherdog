@@ -75,7 +75,7 @@ Network.prototype.render = function () {
                 style: {
                   color: '#039396',
                 }},
-              'Main Network'),
+              '以太坊主网'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
           case 'ropsten-test-network':
@@ -85,7 +85,7 @@ Network.prototype.render = function () {
                 style: {
                   color: '#ff6666',
                 }},
-              'Ropsten Test Net'),
+              'Ropsten测试网络'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
           case 'kovan-test-network':
@@ -95,7 +95,7 @@ Network.prototype.render = function () {
                 style: {
                   color: '#690496',
                 }},
-              'Kovan Test Net'),
+              'Kovan测试网络'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
           case 'rinkeby-test-network':
@@ -105,7 +105,7 @@ Network.prototype.render = function () {
                 style: {
                   color: '#e7a218',
                 }},
-              'Rinkeby Test Net'),
+              'Rinkeby测试网络'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
           default:
@@ -121,7 +121,7 @@ Network.prototype.render = function () {
                 style: {
                   color: '#AEAEAE',
                 }},
-              'Private Network'),
+              '本地网络'),
               props.onClick && h('i.fa.fa-caret-down.fa-lg'),
             ])
         }

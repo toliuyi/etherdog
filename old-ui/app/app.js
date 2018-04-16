@@ -90,7 +90,7 @@ App.prototype.render = function () {
   const { isLoading, loadingMessage, transForward, network } = props
   const isLoadingNetwork = network === 'loading' && props.currentView.name !== 'config'
   const loadMessage = loadingMessage || isLoadingNetwork ?
-    `Connecting to ${this.getNetworkName()}` : null
+    `正在连接 ${this.getNetworkName()}` : null
   log.debug('Main ui render function')
 
   return (
@@ -268,7 +268,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('.menu-icon.diamond'),
-        'Main Ethereum Network',
+        '以太坊主网网络',
         providerType === 'mainnet' ? h('.check', '✓') : null,
       ]
     ),
@@ -285,7 +285,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('.menu-icon.red-dot'),
-        'Ropsten Test Network',
+        'Ropsten 测试网络',
         providerType === 'ropsten' ? h('.check', '✓') : null,
       ]
     ),
@@ -302,7 +302,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('.menu-icon.hollow-diamond'),
-        'Kovan Test Network',
+        'Kovan 测试网络',
         providerType === 'kovan' ? h('.check', '✓') : null,
       ]
     ),
@@ -319,7 +319,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('.menu-icon.golden-square'),
-        'Rinkeby Test Network',
+        'Rinkeby 测试网络',
         providerType === 'rinkeby' ? h('.check', '✓') : null,
       ]
     ),
@@ -336,7 +336,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('i.fa.fa-question-circle.fa-lg.menu-icon'),
-        'Localhost 8545',
+        '本地网络 8545端口',
         activeNetwork === 'http://localhost:8545' ? h('.check', '✓') : null,
       ]
     ),
@@ -355,7 +355,7 @@ App.prototype.renderNetworkDropdown = function () {
       },
       [
         h('i.fa.fa-question-circle.fa-lg.menu-icon'),
-        'Custom RPC',
+        '本地 RPC 网络',
         activeNetwork === 'custom' ? h('.check', '✓') : null,
       ]
     ),
@@ -665,13 +665,13 @@ App.prototype.getNetworkName = function () {
   let name
 
   if (providerName === 'mainnet') {
-    name = 'Main Ethereum Network'
+    name = '以太坊主网网络'
   } else if (providerName === 'ropsten') {
-    name = 'Ropsten Test Network'
+    name = 'Ropsten 测试网络'
   } else if (providerName === 'kovan') {
-    name = 'Kovan Test Network'
+    name = 'Kovan 测试网络'
   } else if (providerName === 'rinkeby') {
-    name = 'Rinkeby Test Network'
+    name = 'Rinkeby 测试网络'
   } else {
     name = 'Unknown Private Network'
   }
