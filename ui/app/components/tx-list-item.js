@@ -295,7 +295,7 @@ TxListItem.prototype.render = function () {
 
       this.showRetryButton() && h('div.tx-list-item-retry-container', [
 
-        h('span.tx-list-item-retry-copy', 'Taking too long?'),
+        h('span.tx-list-item-retry-copy',this.context.t('takesTooLong')),
 
         h('span.tx-list-item-retry-link', {
           onClick: (event) => {
