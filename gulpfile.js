@@ -418,6 +418,8 @@ gulp.task('dev:mascara',
   )
 )
 
+
+
 gulp.task('EDCopyImages',function(){
   return gulp.src('./etherdog/img/**/*').pipe(gulp.dest('./dist/chrome/images'));
 })
@@ -426,24 +428,39 @@ gulp.task('EDCopyLocal',function(){
   return gulp.src('./etherdog/local/**/*').pipe(gulp.dest('./dist/chrome/_locales'));
 })
 
+gulp.task('EDCopyApp',function(){
+  return gulp.src('./etherdog/app/**/*').pipe(gulp.dest('./app'));
+})
+
 gulp.task('EDCopyModules',function(){
   return gulp.src('./etherdog/modules/**/*').pipe(gulp.dest('./node_modules'));
 })
 
+gulp.task('EDCopy:before',
+  gulp.parallel(
+    'EDCopyModules',
+    'EDCopyApp',
+  )
+)
+
+gulp.task('EDCopy:after',
+  gulp.parallel(
+    'EDCopyImages',
+    'EDCopyLocal',
+  )
+)
+
 gulp.task('build',
   gulp.series(
     'clean',
-    'EDCopyModules',
+    'EDCopy:before',
     'build:scss',
     gulpParallel(
       'build:extension:js',
       'build:mascara:js',
       'copy'
     ),
-    gulp.parallel(
-      'EDCopyImages',
-      'EDCopyLocal'
-    )
+    'EDCopy:after',
   )
 )
 
@@ -482,7 +499,7 @@ gulp.task('dist',
 function zipTask(target) {
   return () => {
     return gulp.src(`dist/${target}/**`)
-    .pipe(zip(`metamask-${target}-${manifest.version}.zip`))
+    .pipe(zip(`etherdog-${target}-${manifest.version}.zip`))
     .pipe(gulp.dest('builds'))
   }
 }
