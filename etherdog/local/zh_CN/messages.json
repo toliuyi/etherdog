@@ -239,7 +239,7 @@
     "message": "下载状态日志"
   },
    "dropped": {
-      "message": "降低"
+      "message": "已丢弃"
    },
    "edit": {
       "message": "编辑"
@@ -787,7 +787,7 @@
       "message": "代币符号必须介于0到10个字符之间。"
    },
    "takesTooLong": {
-      "message": "花费太长时间？"
+      "message": "长时间未确认？"
    },
    "terms": {
       "message": "使用条款"
@@ -940,7 +940,7 @@
     "message": "拒绝"
   },
   "Increasethegas": {
-    "message": "增加你的交易油价（GWEI）。"
+    "message": "尝试提高交易油价。"
   }
 
 }
