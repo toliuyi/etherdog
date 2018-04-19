@@ -239,7 +239,7 @@
    "message": "下载状态日志"
  },
   "dropped": {
-     "message": "降低"
+     "message": "已丢弃"
   },
   "edit": {
      "message": "编辑"
