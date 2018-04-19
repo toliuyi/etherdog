@@ -329,7 +329,7 @@
       "message": "油价 必填"
    },
    "generatingSeed": {
-      "message": "正在生成种子单词..."
+      "message": "正在生成助记词..."
    },
    "getEther": {
       "message": "获取Eth"
