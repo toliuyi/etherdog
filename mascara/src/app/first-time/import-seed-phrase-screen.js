@@ -42,7 +42,7 @@ class ImportSeedPhraseScreen extends Component {
     let warning = null
 
     if (seedPhrase && this.parseSeedPhrase(seedPhrase).split(' ').length !== 12) {
-      warning = '种子备份密语是十二个单词'
+      warning = '助记词是12个小写英文单词'
     } else if (password && password.length < 8) {
       warning = '密码最少需要八位'
     } else if ((password || prevPassword) !== (confirmPassword || prevConfirmPassword)) {
