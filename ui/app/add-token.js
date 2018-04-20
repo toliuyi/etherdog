@@ -372,6 +372,10 @@ AddTokenScreen.prototype.renderTabs = function () {
           h('div.add-token__search-input-error-message', errors.tokenSelector),
         ]),
         this.renderTokenList(),
+        h('a.add-token__info-box__copy--blue', {
+          href: 'https://www.etherdog.io/contact',
+          target: '_blank',
+        }, this.context.t('andtokenA')),
       ]),
     ]),
   ])
