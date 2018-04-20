@@ -941,6 +941,9 @@
  },
  "Increasethegas": {
    "message": "尝试提高交易油价。"
+ },
+ "andtokenA": {
+  "message": "没有找到代币？跟我们联系，申请代币预置。"
  }
 
 }

@@ -930,6 +930,9 @@
   "increaseGas": {
     "message": "Increase your gas fee to attempt to overwrite and speed up your transaction"
   },
+  "editAmount": {
+    "message": "Edit"
+  },
   "accountDup": {
     "message": "The account you are trying to import is a duplicate"
   },
@@ -938,5 +941,9 @@
   },
   "Increasethegas": {
     "message": "Increase the gas price on your transaction"
-  }
+  },
+  "andtokenA": {
+    "message": "Without your tokens?Contact us!"
+}
+
 }
