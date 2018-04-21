@@ -1,9 +1,9 @@
 {
   "name": "以太狗",
   "short_name": "etherdog",
-  "version": "4.5.3",
+  "version": "4.5.31",
   "manifest_version": 2,
-  "author": "https://etherdog.io",
+  "author": "http://etherdog.io",
   "description": "安全可靠的以太坊钱包，metamask的中文精简版",
   "commands": {
     "_execute_browser_action": {
@@ -24,7 +24,7 @@
       "id": "admin@etherdog.io"
     }
   },
-  "default_locale": "en",
+  "default_locale": "zh_CN",
   "background": {
     "scripts": [
       "chromereload.js",
