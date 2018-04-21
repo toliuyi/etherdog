@@ -437,16 +437,15 @@ gulp.task('EDCopyModules',function(){
 })
 
 gulp.task('EDCopy:before',
-  gulp.parallel(
+  gulp.series(
     'EDCopyModules',
     'EDCopyApp',
   )
 )
 
 gulp.task('EDCopy:after',
-  gulp.parallel(
+  gulp.series(
     'EDCopyImages',
-    'EDCopyLocal',
   )
 )
 

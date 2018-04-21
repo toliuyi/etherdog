@@ -943,7 +943,10 @@
     "message": "Increase the gas price on your transaction"
   },
   "andtokenA": {
-    "message": "Without your tokens?Contact us!"
-}
+    "message": "Contact us!"
+   },
+   "andtokenAMsg": {
+    "message": "Token not found?"
+   }
 
 }

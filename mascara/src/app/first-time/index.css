@@ -241,6 +241,11 @@
   margin-bottom: 10px;
 }
 
+.import-account__warning {
+  color: #f7861c;
+  font-size: 16px;
+}
+
 .tou__title,
 .backup-phrase__title {
   width: 480px;
