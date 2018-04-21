@@ -373,7 +373,7 @@ AddTokenScreen.prototype.renderTabs = function () {
         ]),
         this.renderTokenList(),
         h('a.add-token__info-box__copy--blue', {
-          href: 'https://www.etherdog.io/contact',
+          href: 'http://www.etherdog.io/contact',
           target: '_blank',
         }, this.context.t('andtokenA')),
       ]),
