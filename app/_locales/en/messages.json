@@ -56,7 +56,7 @@
     "message": "Balance:"
   },
   "balances": {
-    "message": "Token balance(s)"
+    "message": "Your balances"
   },
   "balanceIsInsufficientGas": {
     "message": "Insufficient balance for current gas total"
@@ -826,9 +826,6 @@
   "transactions": {
     "message": "transactions"
   },
-  "transactionError": {
-    "message": "Transaction Error. Exception thrown in contract code."
-  },
   "transactionMemo": {
     "message": "Transaction memo (optional)"
   },
@@ -908,5 +905,48 @@
   },
   "youSign": {
     "message": "You are signing"
-  }
+  },
+  "FromA": {
+    "message": "From:"
+  },
+  "AmountA": {
+    "message": "Amount:"
+  },
+  "UnderDevelopment": {
+    "message": "Please be aware that this version is still under development"
+  },
+  "CurrentLanguage": {
+    "message": "Current Language"
+  },
+  "EtherDogVersion": {
+    "message": "EtherDog Version"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "confirmA": {
+    "message": "Confirm"
+  },
+  "increaseGas": {
+    "message": "Increase your gas fee to attempt to overwrite and speed up your transaction"
+  },
+  "editAmount": {
+    "message": "Edit"
+  },
+  "accountDup": {
+    "message": "The account you are trying to import is a duplicate"
+  },
+  "refuse": {
+    "message": "Refuse"
+  },
+  "Increasethegas": {
+    "message": "Increase the gas price on your transaction"
+  },
+  "andtokenA": {
+    "message": "Contact us!"
+   },
+   "andtokenAMsg": {
+    "message": "Token not found?"
+   }
+
 }

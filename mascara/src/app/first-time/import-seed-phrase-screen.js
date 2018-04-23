@@ -95,14 +95,11 @@ class ImportSeedPhraseScreen extends Component {
             <div className="import-account__title">
             使用助记词恢复钱包
             </div>
-            <div className="import-account__title">
-            *注意:钱包刚恢复只显示地址1，可使用“更多地址”恢复其它地址
-            </div>
-            <div className="import-account__selector-label">
-            在这里输入助记词，助记词是12个小写英文单词。
+            <div className="import-account__warning">
+            注意:钱包恢复后只显示地址1，可使用“更多地址”恢复其它地址
             </div>
             <div className="import-account__input-wrapper">
-              <label className="import-account__input-label">助记词</label>
+              <label className="import-account__input-label">输入助记词（12个小写英文单词）：</label>
               <textarea
                 className="import-account__secret-phrase"
                 onChange={e => this.onChange({seedPhrase: e.target.value})}

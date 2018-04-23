@@ -362,6 +362,11 @@ AddTokenScreen.prototype.renderTabs = function () {
             href: 'https://github.com/toliuyi/etherdog/wiki/MngToken',
             target: '_blank',
           }, this.context.t('learnMore')),
+          h('div.add-token__info-box__copy', this.context.t('andtokenAMsg')),
+          h('a.add-token__info-box__copy--blue', {
+            href: 'http://www.etherdog.io/contact',
+            target: '_blank',
+          }, this.context.t('andtokenA')),
         ]),
         h('div.add-token__input-container', [
           h('input.add-token__input', {
@@ -372,10 +377,6 @@ AddTokenScreen.prototype.renderTabs = function () {
           h('div.add-token__search-input-error-message', errors.tokenSelector),
         ]),
         this.renderTokenList(),
-        h('a.add-token__info-box__copy--blue', {
-          href: 'https://www.etherdog.io/contact',
-          target: '_blank',
-        }, this.context.t('andtokenA')),
       ]),
     ]),
   ])

@@ -207,7 +207,7 @@ function currentConversionInformation (metamaskState, state) {
   var conversionDate = metamaskState.conversionDate
   return h('div', [
     h('span', {style: { fontWeight: 'bold', paddingRight: '10px'}}, 'Current Conversion'),
-    h('span', {style: { fontWeight: 'bold', paddingRight: '10px', fontSize: '13px'}}, `Updated ${Date(conversionDate)}`),
+    h('span', {style: { fontWeight: 'bold', paddingRight: '10px', fontSize: '13px'}}, `在${Date(conversionDate)}更新`),
     h('select#currentCurrency', {
       onChange (event) {
         event.preventDefault()
