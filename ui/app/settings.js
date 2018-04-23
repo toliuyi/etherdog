@@ -90,7 +90,7 @@ class Settings extends Component {
     return h('div.settings__content-row', [
       h('div.settings__content-item', [
         h('span', this.context.t('currentConversion')),
-        h('span.settings__content-description', `Updated ${Date(conversionDate)}`),
+        h('span.settings__content-description', `最后更新 ${Date(conversionDate)}`),
       ]),
       h('div.settings__content-item', [
         h('div.settings__content-item-col', [
