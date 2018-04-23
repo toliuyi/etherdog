@@ -1,5 +1,6 @@
 {
   "objects": [
+/*
     {
       "symbol": "ethaud",
       "base": {
@@ -11,17 +12,19 @@
         "name": "Australian Dollar"
       }
     },
+*/
     {
-      "symbol": "ethhkd",
+      "symbol": "ethcny",
       "base": {
         "code": "eth",
         "name": "Ethereum"
       },
       "quote": {
-        "code": "hkd",
-        "name": "Hong Kong Dollar"
+        "code": "元",
+        "name": "人民币"
       }
     },
+/*
     {
       "symbol": "ethsgd",
       "base": {
@@ -649,5 +652,6 @@
         "name": "Zcash"
       }
     }
+    */
   ]
 }
