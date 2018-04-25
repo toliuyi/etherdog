@@ -147,7 +147,7 @@
    "message": "复制"
  },
  "copyPrivateKey": {
-   "message": "这是你的私钥（点击复制）"
+   "message": "这是你的私钥（可点击后复制）"
  },
  "create": {
    "message": "添加"
@@ -163,7 +163,7 @@
    "description": "Exchange type (cryptocurrencies)"
  },
  "currentConversion": {
-   "message": "货币单位"
+   "message": "人民币兑换率"
  },
  "currentNetwork": {
    "message": "当前网络"
@@ -584,7 +584,7 @@
      "message": "私钥"
   },
   "privateKeyWarning": {
-     "message": "注意：永远不要公开私钥。任何知道你私钥的人都可以窃取你地址上的资产。"
+     "message": "注意：绝不能把私钥发给别人，任何人知道你私钥都可以窃取你地址上的资产。也不要用网盘保存私钥，或用聊天工具传输私钥。"
   },
   "privateNetwork": {
      "message": "本地网络"

@@ -379,46 +379,7 @@ gulp.task('zip:opera', zipTask('opera'))
 //gulp.task('zip', gulp.parallel('zip:chrome', 'zip:firefox', 'zip:edge', 'zip:opera'))
 gulp.task('zip', gulp.parallel('zip:chrome'))
 
-// high level tasks
-
-gulp.task('dev',
-  gulp.series(
-    'clean',
-    'dev:scss',
-    gulp.parallel(
-      'dev:extension:js',
-      'dev:mascara:js',
-      'dev:copy',
-      'dev:reload'
-    )
-  )
-)
-
-gulp.task('dev:extension',
-  gulp.series(
-    'clean',
-    'dev:scss',
-    gulp.parallel(
-      'dev:extension:js',
-      'dev:copy',
-      'dev:reload'
-    )
-  )
-)
-
-gulp.task('dev:mascara',
-  gulp.series(
-    'clean',
-    'dev:scss',
-    gulp.parallel(
-      'dev:mascara:js',
-      'dev:copy',
-      'dev:reload'
-    )
-  )
-)
-
-
+//etherdog task
 
 gulp.task('EDCopyImages',function(){
   return gulp.src('./etherdog/img/**/*').pipe(gulp.dest('./dist/chrome/images'));
@@ -448,6 +409,52 @@ gulp.task('EDCopy:after',
     'EDCopyImages',
   )
 )
+
+// high level tasks
+
+gulp.task('dev',
+  gulp.series(
+    'clean',
+    'EDCopy:before',
+    'dev:scss',
+    gulp.parallel(
+      'dev:extension:js',
+      'dev:mascara:js',
+      gulp.series(
+        'dev:copy',
+        'EDCopy:after'
+      ),
+      'dev:reload'
+    )  
+  )
+)
+
+gulp.task('dev:extension',
+  gulp.series(
+    'clean',
+    'dev:scss',
+    gulp.parallel(
+      'dev:extension:js',
+      'dev:copy',
+      'dev:reload'
+    )
+  )
+)
+
+gulp.task('dev:mascara',
+  gulp.series(
+    'clean',
+    'dev:scss',
+    gulp.parallel(
+      'dev:mascara:js',
+      'dev:copy',
+      'dev:reload'
+    )
+  )
+)
+
+
+
 
 gulp.task('build',
   gulp.series(

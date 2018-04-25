@@ -46,33 +46,33 @@ AccountImportSubview.prototype.render = function () {
           },
           onClick: () => {
             global.platform.openWindow({
-              url: 'https://github.com/toliuyi/etherdog/wiki/LooseAccount',
+              url: 'https://github.com/toliuyi/etherdog/wiki/LooseAccount1',
             })
           },
         }, this.context.t('here')),
       ]),
 
-      // h('div.new-account-import-form__select-section', [
+      h('div.new-account-import-form__select-section', [
 
-      //   h('div.new-account-import-form__select-label', this.context.t('selectType')),
+        h('div.new-account-import-form__select-label', this.context.t('selectType')),
 
-      //   h(Select, {
-      //     className: 'new-account-import-form__select',
-      //     name: 'import-type-select',
-      //     clearable: false,
-      //     value: type || menuItems[0],
-      //     options: menuItems.map((type) => {
-      //       return {
-      //         value: type,
-      //         label: type,
-      //       }
-      //     }),
-      //     onChange: (opt) => {
-      //       this.setState({ type: opt.value })
-      //     },
-      //   }),
+        h(Select, {
+          className: 'new-account-import-form__select',
+          name: 'import-type-select',
+          clearable: false,
+          value: type || menuItems[0],
+          options: menuItems.map((type) => {
+            return {
+              value: type,
+              label: type,
+            }
+          }),
+          onChange: (opt) => {
+            this.setState({ type: opt.value })
+          },
+        }),
 
-      // ]),
+      ]),
 
       this.renderImportView(),
     ])

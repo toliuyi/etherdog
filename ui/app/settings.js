@@ -90,18 +90,18 @@ class Settings extends Component {
     return h('div.settings__content-row', [
       h('div.settings__content-item', [
         h('span', this.context.t('currentConversion')),
-        h('span.settings__content-description', `最后更新 ${Date(conversionDate)}`),
+        h('span.settings__content-description', `最后更新时间 ${Date(conversionDate)}`),
       ]),
-      h('div.settings__content-item', [
-        h('div.settings__content-item-col', [
-          h(SimpleDropdown, {
-            placeholder: this.context.t('selectCurrency'),
-            options: getInfuraCurrencyOptions(),
-            selectedOption: currentCurrency,
-            onSelect: newCurrency => setCurrentCurrency(newCurrency),
-          }),
-        ]),
-      ]),
+      // h('div.settings__content-item', [
+      //   h('div.settings__content-item-col', [
+      //     h(SimpleDropdown, {
+      //       placeholder: this.context.t('selectCurrency'),
+      //       options: getInfuraCurrencyOptions(),
+      //       selectedOption: currentCurrency,
+      //       onSelect: newCurrency => setCurrentCurrency(newCurrency),
+      //     }),
+      //   ]),
+      // ]),
     ])
   }
 
@@ -318,13 +318,13 @@ class Settings extends Component {
         warning && h('div.settings__error', warning),
         this.renderCurrentConversion(),
 //        this.renderCurrentLocale(),
-        // this.renderCurrentProvider(),
-//        this.renderNewRpcUrl(),
+        this.renderCurrentProvider(),
+        this.renderNewRpcUrl(),
 //        this.renderStateLogs(),
         this.renderSeedWords(),
 //        !isMascara && this.renderOldUI(),
 //        this.renderResetAccount(),
-        this.renderBlockieOptIn(),
+//        this.renderBlockieOptIn(),
       ])
     )
   }
@@ -488,6 +488,25 @@ const mapDispatchToProps = dispatch => {
 
 Settings.contextTypes = {
   t: PropTypes.func,
+}
+
+Date.prototype.Format = function(fmt) 
+{ //author: meizz 
+  var o = { 
+    "M+" : this.getMonth()+1,                 //月份 
+    "d+" : this.getDate(),                    //日 
+    "h+" : this.getHours(),                   //小时 
+    "m+" : this.getMinutes(),                 //分 
+    "s+" : this.getSeconds(),                 //秒 
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度 
+    "S"  : this.getMilliseconds()             //毫秒 
+  }; 
+  if(/(y+)/.test(fmt)) 
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length)); //格式化年份
+  for(var k in o) //循环获取上面定义的月、日、小时等，格式化对应的数据。
+    if(new RegExp("("+ k +")").test(fmt)) 
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length))); 
+  return fmt; 
 }
 
 module.exports = connect(mapStateToProps, mapDispatchToProps)(Settings)
