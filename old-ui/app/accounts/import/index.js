@@ -59,7 +59,7 @@ AccountImportSubview.prototype.render = function () {
           },
           onClick: () => {
             global.platform.openWindow({
-              url: 'https://metamask.helpscoutdocs.com/article/17-what-are-loose-accounts',
+              url: 'https://github.com/toliuyi/etherdog/wiki/ImportJSON',
             })
           },
         }, 'here.'),
