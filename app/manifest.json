@@ -1,8 +1,8 @@
 {
   "name": "以太狗",
   "short_name": "etherdog",
-  "version": "4.5.32",
-  "manifest_version": 2,
+  "version": "4.5.33",
+  "manifest_version": 3,
   "author": "http://etherdog.io",
   "description": "安全可靠的以太坊钱包，metamask的中文精简版",
   "commands": {

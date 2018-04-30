@@ -59,7 +59,7 @@ AccountImportSubview.prototype.render = function () {
           },
           onClick: () => {
             global.platform.openWindow({
-              url: 'https://github.com/toliuyi/etherdog/wiki/ImportJSON',
+              url: 'https://github.com/toliuyi/etherdog/wiki',
             })
           },
         }, 'here.'),

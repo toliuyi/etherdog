@@ -6,7 +6,7 @@ const actions = require('../../actions')
 const FileInput = require('react-simple-file-input').default
 
 
-const HELP_LINK = 'https://github.com/toliuyi/etherdog/wiki/ImportJSON'
+const HELP_LINK = 'https://github.com/toliuyi/etherdog/wiki'
 
 class JsonImportSubview extends Component {
   constructor (props) {

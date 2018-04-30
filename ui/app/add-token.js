@@ -359,7 +359,7 @@ AddTokenScreen.prototype.renderTabs = function () {
           h('div.add-token__info-box__title', this.context.t('whatsThis')),
           h('div.add-token__info-box__copy', this.context.t('keepTrackTokens')),
           h('a.add-token__info-box__copy--blue', {
-            href: 'https://github.com/toliuyi/etherdog/wiki/MngToken',
+            href: 'https://github.com/toliuyi/etherdog/wiki',
             target: '_blank',
           }, this.context.t('learnMore')),
           h('div.add-token__info-box__copy', this.context.t('andtokenAMsg')),

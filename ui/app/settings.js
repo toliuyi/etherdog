@@ -343,7 +343,7 @@ class Settings extends Component {
         h('div.settings__info-link-header', this.context.t('links')),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://github.com/toliuyi/etherdog/wiki/',
+            href: 'https://github.com/toliuyi/etherdog/wiki',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('privacyMsg')),
@@ -351,7 +351,7 @@ class Settings extends Component {
         ]),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://github.com/toliuyi/etherdog/wiki/Terms',
+            href: 'https://github.com/toliuyi/etherdog/wiki',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('terms')),

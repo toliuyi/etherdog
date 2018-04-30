@@ -45,11 +45,11 @@ PendingMsg.prototype.render = function () {
       }, [
         this.context.t('signNotice'),
         h('a', {
-          href: 'https://github.com/toliuyi/etherdog/wiki/SignData',
+          href: 'https://github.com/toliuyi/etherdog/wiki',
           style: { color: 'rgb(247, 134, 28)' },
           onClick: (event) => {
             event.preventDefault()
-            const url = 'https://github.com/toliuyi/etherdog/wiki/SignData'
+            const url = 'https://github.com/toliuyi/etherdog/wiki'
             global.platform.openWindow({ url })
           },
         }, this.context.t('readMore')),

@@ -46,7 +46,7 @@ AccountImportSubview.prototype.render = function () {
           },
           onClick: () => {
             global.platform.openWindow({
-              url: 'https://github.com/toliuyi/etherdog/wiki/LooseAccount1',
+              url: 'https://github.com/toliuyi/etherdog/wiki',
             })
           },
         }, this.context.t('here')),
