@@ -11,6 +11,8 @@ const BalanceComponent = require('./balance-component')
 const TxList = require('./tx-list')
 const Identicon = require('./identicon')
 
+const contractMap = require('eth-contract-metadata')
+
 TxView.contextTypes = {
   t: PropTypes.func,
 }
@@ -70,7 +72,6 @@ TxView.prototype.renderHeroBalance = function () {
 
 TxView.prototype.renderButtons = function () {
   const {selectedToken, showModal, showSendPage, showSendTokenPage } = this.props
-
   return !selectedToken
     ? (
       h('div.flex-row.flex-center.hero-balance-buttons', [
@@ -91,7 +92,23 @@ TxView.prototype.renderButtons = function () {
     : (
       h('div.flex-row.flex-center.hero-balance-buttons', [
         h('button.btn-primary.hero-balance-button', {
-          onClick: showSendTokenPage,
+          onClick: function(){
+            console.log(selectedToken)
+            console.log(contractMap)
+            let newContractMap = {}
+            for(let i in contractMap){
+              newContractMap[i.toLowerCase()] = contractMap[i]
+            }
+            console.log(newContractMap)
+            window.open(newContractMap[selectedToken.address].Officialwebsite,'_new')
+          },
+        }, this.context.t('website')),
+
+        h('button.btn-primary.hero-balance-button', {
+          style: {
+            marginLeft: '0.8em',
+          },
+          onClick: showSendPage,
         }, this.context.t('send')),
       ])
     )
