@@ -105,6 +105,13 @@ AccountMenu.prototype.render = function () {
       icon: h('img.account-menu__item-icon', { src: 'images/settings.svg' }),
       text: this.context.t('settings'),
     }),
+    h(Item, {
+      onClick: function(){
+        window.open("http://www.yunjiami.com",'_new')
+      },
+      icon: h('img.account-menu__item-icon', { src: 'images/settings.svg' }),
+      text: this.context.t('dapp'),
+    }),
   ])
 }
 

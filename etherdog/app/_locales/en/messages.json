@@ -947,6 +947,11 @@
    },
    "andtokenAMsg": {
     "message": "Token not found?"
-   }
+   },
+   "website": {
+    "message": "Officialwebsite"
+   },
+   "dapp": {
+    "message": "DAPP"
 
 }
