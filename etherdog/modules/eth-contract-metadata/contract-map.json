@@ -4,35 +4,40 @@
     "logo": "MLNSymbol.png",
     "erc20": true,
     "symbol": "MLN",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://melonport.com/" 
   },
   "0xCed1A8529125D1bD06B54a7B01210df357D00885": {
     "name": "Too Real Badge",
     "logo": "too-real.jpg",
     "erc20": true,
     "symbol": "TRL",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "" 
   },
   "0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6": {
     "name": "Dentacoin",
     "logo": "Dentacoin.png",
     "erc20": true,
     "symbol": "DCN",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "https://dentacoin.com/" 
   },
   "0xba2184520A1cC49a6159c57e61E1844E085615B6": {
     "name": "HelloGold Token",
     "logo": "hgt.png",
     "erc20": true,
     "symbol": "HGT",
-    "decimals": 8
+    "decimals": 8,
+    "Officialwebsite": "https://www.hellogold.com/" 
   },
   "0x8727c112C712c4a03371AC87a74dD6aB104Af768": {
     "name": "Jetcoin Institute Token",
     "logo": "JETCOIN28.png",
     "erc20": true,
     "symbol": "JET",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "http://www.jetcoininstitute.com/" 
   },
   "0xD26B63194F70E0939393D23D3A5b1ed6BDE5f835": {
     "name": "光元",
@@ -47,241 +52,275 @@
     "logo": "indorseLogo.jpg",
     "erc20": true,
     "symbol": "IND",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://indorse.io/"  
   },
   "0xC596bD09d652827b0106292D3e378D5938df4B12": {
     "name": "Teleport Token",
     "logo": "tpt.png",
     "erc20": true,
     "symbol": "TPT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://neverdie.io/"  
   },
   "0xA54ddC7B3CcE7FC8b1E3Fa0256D0DB80D2c10970": {
     "name": "NEVERDIE Coin",
     "logo": "ndc.png",
     "erc20": true,
     "symbol": "NDC",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://neverdie.com/"  
   },
   "0xD0b3462481C33F63a288cd1923e2A261EE65b4FF": {
     "name": "EGO Badge",
     "logo": "ego_badge.png",
     "erc20": true,
     "symbol": "EGO",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": ""  
   },
   "0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0": {
     "name": "EOS",
     "logo": "eos-logo.jpeg",
     "erc20": true,
     "symbol": "EOS",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://eos.io/"  
   },
   "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C": {
     "name": "Bancor Network Token",
     "logo": "bancor.png",
     "erc20": true,
     "symbol": "BNT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://www.bancor.network/"  
   },
   "0xfa05A73FfE78ef8f1a739473e462c54bae6567D9": {
     "name": "Lunyr Token",
     "logo": "lun.png",
     "erc20": true,
     "symbol": "LUN",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://lunyr.com/"  
   },
   "0x5c543e7AE0A1104f78406C340E9C64FD9fCE5170": {
     "name": "vSlice",
     "logo": "",
     "erc20": true,
     "symbol": "vSlice",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "http://www.vslice.io/"  
   },
   "0xFf3519eeeEA3e76F1F699CCcE5E23ee0bdDa41aC": {
     "name": "Blockchain Capital",
     "logo": "bcap.svg",
     "erc20": true,
     "symbol": "BCAP",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "http://blockchain.capital/"  
   },
   "0x6531f133e6DeeBe7F2dcE5A0441aA7ef330B4e53": {
     "name": "Chronobank TIME",
     "logo": "chronobank.png",
     "erc20": true,
     "symbol": "TIME",
-    "decimals": 8
+    "decimals": 8,
+    "Officialwebsite": "https://chronobank.io/"  
   },
   "0xE7775A6e9Bcf904eb39DA2b68c5efb4F9360e08C": {
     "name": "Token-as-a-Service",
     "logo": "taas-ico.png",
     "erc20": true,
     "symbol": "TAAS",
-    "decimals": 6
+    "decimals": 6,
+    "Officialwebsite": "https://taas.fund/"  
   },
   "0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a": {
     "name": "Monolith TKN",
     "logo": "tkn.svg",
     "erc20": true,
     "symbol": "TKN",
-    "decimals": 8
+    "decimals": 8,
+    "Officialwebsite": "https://tokencard.io/"  
   },
   "0x08711D3B02C8758F2FB3ab4e80228418a7F8e39c": {
     "name": "Edgeless",
     "logo": "",
     "erc20": true,
     "symbol": "EDG",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "https://edgeless.io/"  
   },
   "0xf7B098298f7C69Fc14610bf71d5e02c60792894C": {
     "name": "Guppy",
     "logo": "guppy.png",
     "erc20": true,
     "symbol": "GUP",
-    "decimals": 3
+    "decimals": 3,
+    "Officialwebsite": "https://matchpool.co/"  
   },
   "0x4DF812F6064def1e5e029f1ca858777CC98D2D81": {
     "name": "Xaurum",
     "logo": "xaurum_logo.svg",
     "erc20": true,
     "symbol": "XAUR",
-    "decimals": 8
+    "decimals": 8,
+    "Officialwebsite": "http://www.xaurum.org/"  
   },
   "0xB9e7F8568e08d5659f5D29C4997173d84CdF2607": {
     "name": "Swarm City Token",
     "logo": "swt.jpg",
     "erc20": true,
     "symbol": "SWT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://swarm.city/"  
   },
   "0xCb94be6f13A1182E4A4B6140cb7bf2025d28e41B": {
     "name": "Trustcoin",
     "logo": "",
     "erc20": true,
     "symbol": "TRST",
-    "decimals": 6
+    "decimals": 6,
+    "Officialwebsite": "https://www.wetrust.io/"  
   },
   "0x960b236A07cf122663c4303350609A66A7B288C0": {
     "name": "Aragon Network Token",
     "logo": "aragon_isotype.svg",
     "erc20": true,
     "symbol": "ANT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://aragon.one/"  
   },
   "0x667088b212ce3d06a1b553a7221E1fD19000d9aF": {
     "name": "WINGS",
     "logo": "wings_logo.svg",
     "erc20": true,
     "symbol": "WINGS",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://www.wings.ai/"  
   },
   "0xAf30D2a7E90d7DC361c8C4585e9BB7D2F6f15bc7": {
     "name": "FirstBlood Token",
     "logo": "1st.svg",
     "erc20": true,
     "symbol": "1ST",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://firstblood.io/"  
   },
   "0x607F4C5BB672230e8672085532f7e901544a7375": {
     "name": "iEx.ec Network Token",
     "logo": "rlc.png",
     "erc20": true,
     "symbol": "RLC",
-    "decimals": 9
+    "decimals": 9,
+    "Officialwebsite": "https://iex.ec/"  
   },
   "0xaeC2E87E0A235266D9C5ADc9DEb4b2E29b54D009": {
     "name": "SingularDTV",
     "logo": "singulardtv.svg",
     "erc20": true,
     "symbol": "SNGLS",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "https://singulardtv.com/"  
   },
   "0x888666CA69E0f178DED6D75b5726Cee99A87D698": {
     "name": "ICONOMI",
     "logo": "iconomi.png",
     "erc20": true,
     "symbol": "ICN",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://www.iconomi.net/"  
   },
   "0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A": {
     "name": "Digix",
     "logo": "DGD.png",
     "erc20": true,
     "symbol": "DGD",
-    "decimals": 0
+    "decimals": 0,
+    "Officialwebsite": "https://digix.io/"  
   },
   "0xC66eA802717bFb9833400264Dd12c2bCeAa34a6d": {
     "name": "Maker",
     "logo": "logo-maker-4.svg",
     "erc20": true,
     "symbol": "MKR",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://makerdao.com/"  
   },
   "0x0D8775F648430679A709E98d2b0Cb6250d2887EF": {
     "name": "Basic Attention Token",
     "logo": "BAT_icon.svg",
     "erc20": true,
     "symbol": "BAT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://basicattentiontoken.org/"  
   },
   "0x6810e776880C02933D47DB1b9fc05908e5386b96": {
     "name": "Gnosis Token",
     "logo": "gnosis.svg",
     "erc20": true,
     "symbol": "GNO",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://gnosis.pm/"  
   },
   "0xD8912C10681D8B21Fd3742244f44658dBA12264E": {
     "name": "Pluton",
     "logo": "plutus-god.svg",
     "erc20": true,
     "symbol": "PLU",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://plutus.it/"  
   },
   "0xE94327D07Fc17907b4DB788E5aDf2ed424adDff6": {
     "name": "Reputation",
     "logo": "augur_logo.png",
     "erc20": true,
     "symbol": "REP",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "http://www.augur.net/"  
   },
   "0xa74476443119A942dE498590Fe1f2454d7D4aC0d": {
     "name": "Golem Network Token",
     "logo": "golem.svg",
     "erc20": true,
     "symbol": "GNT",
-    "decimals": 18
+    "decimals": 18,
+    "Officialwebsite": "https://golem.network/"  
   },
   "0x617b3f8050a0BD94b6b1da02B4384eE5B4DF13F4": {
     "name": "MetaMark",
     "logo": "metamark.svg",
     "erc20": true,
     "decimals": 18,
-    "symbol": "META"
+    "symbol": "META",
+    "Officialwebsite": "http://www.metamask.io"  
   },
   "0x9a642d6b3368ddc662CA244bAdf32cDA716005BC": {
     "name": "Qtum",
     "logo": "qtum_28.png",
     "erc20": true,
     "decimals": 18,
-    "symbol": "QTUM"
+    "symbol": "QTUM",
+    "Officialwebsite": "https://qtum.org/"  
   },
   "0x7d4b8Cce0591C9044a22ee543533b72E976E36C3": {
     "name": "Change Coin",
     "logo": "change.png",
     "erc20": true,
     "decimals": 18,
-    "symbol": "CAG"
+    "symbol": "CAG",
+    "Officialwebsite": "https://getchange.com/"  
   },
   "0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef": {
     "name": "ENS Registrar",
-    "logo": "ens.svg"
+    "logo": "ens.svg", 
   },
   "0x3d1BA9be9f66B8ee101911bC36D3fB562eaC2244": {
     "name": "Rivetz",
     "logo": "rivetz.png",
     "erc20": true,
     "decimals": 18,
-    "symbol": "RVT"
+    "symbol": "RVT",
+    "Officialwebsite": "https://rivetzintl.com/"  
   }
 }
