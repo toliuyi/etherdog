@@ -62,7 +62,7 @@
      "message": "当前余额不足以支付交易油耗"
   },
   "beta": {
-     "message": "测试版"
+     "message": "BETA"
   },
   "betweenMinAndMax": {
      "description": "helper for inputting hex as decimal input",
