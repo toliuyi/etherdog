@@ -376,7 +376,7 @@ class Settings extends Component {
         ]),
         h('div.settings__info-link-item', [
           h('a', {
-            href: 'https://etherdog.io/',
+            href: 'https://yunjiami.com/',
             target: '_blank',
           }, [
             h('span.settings__info-link', this.context.t('visitWebSite')),
