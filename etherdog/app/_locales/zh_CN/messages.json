@@ -81,10 +81,10 @@
      "message": "购买"
   },
   "buyCoinbase": {
-     "message": "在Coinbase上购买"
+     "message": "从云加密交易所兑换"
   },
   "buyCoinbaseExplainer": {
-     "message": "Coinbase是大型数字货币交易所，中国用户无法使用。"
+     "message": "如果你拥有其他加密货币，你可以通过云加密交易所兑换Eth到云加密钱包钱包。"
   },
   "ok": {
    "message": "好的"
@@ -117,7 +117,7 @@
    "message": "继续"
  },
  "continueToCoinbase": {
-   "message": "继续访问Coinbase"
+   "message": "使用云加密交易所兑换"
  },
  "contractDeployment": {
    "message": "部署合约"
