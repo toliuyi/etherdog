@@ -47,6 +47,14 @@
     "decimals": 18,
     "Officialwebsite": "http://www.sunpower.io"   
   },
+  "0xdff991af459d05175b3bb766b950afc697b68df0": {
+    "name": "真爱链",
+    "logo": "SP.png",
+    "erc20": true,
+    "symbol": "HL",
+    "decimals": 18,
+    "Officialwebsite": "http://www.sunpower.io"   
+  },
   "0xf8e386EDa857484f5a12e4B5DAa9984E06E73705": {
     "name": "Indorse Token",
     "logo": "indorseLogo.jpg",

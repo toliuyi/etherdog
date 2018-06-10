@@ -1,5 +1,5 @@
 {
-  "name": "以太狗",
+  "name": "云加密钱包",
   "short_name": "etherdog",
   "version": "4.5.33",
   "manifest_version": 2,
@@ -37,7 +37,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "以太狗",
+    "default_title": "云加密钱包",
     "default_popup": "popup.html"
   },
   "content_scripts": [
