@@ -102,7 +102,7 @@ class BackupPhraseScreen extends Component {
         <div className="backup-phrase__phrase">
           <div className="backup-phrase__title">保存助记词</div>
           <div className="backup-phrase__body-text">
-          请妥善保存您的钱包助记词，通过助记词可使用以太狗、Metamask及很多支持BIP39标准的钱包软件恢复你的以太坊钱包。
+          请妥善保存您的钱包助记词，通过助记词可使用云加密钱包、Metamask及很多支持BIP39标准的钱包软件恢复你的以太坊钱包。
           </div>
           <div className="backup-phrase__body-text">
           警告：任何人知道你的助记词，都可以随时转走以太坊钱包内的全部资产。

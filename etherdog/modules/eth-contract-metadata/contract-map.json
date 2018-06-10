@@ -45,7 +45,55 @@
     "erc20": true,
     "symbol": "SP",
     "decimals": 18,
-    "Officialwebsite": "http://www.sunpower.io"   
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/SP-ETH"   
+  },
+  "0xdff991af459d05175b3bb766b950afc697b68df0": {
+    "name": "真爱链（空投）",
+    "logo": "hl.png",
+    "erc20": true,
+    "symbol": "HL",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/HL-ETH"   
+  },
+  "0x85993be4ef5bec00b62ba7e46a8a70f353182b3e": {
+    "name": "医友宝（空投）",
+    "logo": "YYB.png",
+    "erc20": true,
+    "symbol": "YYB",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/YYB-ETH"   
+  },
+  "0x25a1de1c3ee658fe034b8914a1d8d34110423af8": {
+    "name": "CheGuevara（空投）",
+    "logo": "Che.png",
+    "erc20": true,
+    "symbol": "SP",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/Che-ETH"   
+  },
+  "0x9b3502df03d20beddf429b205db26e74e62e32b3": {
+    "name": "DouYin（空投）",
+    "logo": "DY.png",
+    "erc20": true,
+    "symbol": "DY",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/DY-ETH"   
+  },
+  "0x27bc53596dc0ea71de3c65c799d8e6c96c1dda98": {
+    "name": "云加密（空投）",
+    "logo": "YJM.png",
+    "erc20": true,
+    "symbol": "YJM",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/YJM-ETH"   
+  },
+  "0x5d0fa08aeb173ade44b0cf7f31d506d8e04f0ac8": {
+    "name": "360APP（空投）",
+    "logo": "DAPP.png",
+    "erc20": true,
+    "symbol": "DAPP",
+    "decimals": 18,
+    "Officialwebsite": "https://yunjiami.github.io/#!/trade/360APP-ETH"   
   },
   "0xf8e386EDa857484f5a12e4B5DAa9984E06E73705": {
     "name": "Indorse Token",

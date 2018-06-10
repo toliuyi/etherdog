@@ -1,9 +1,9 @@
 {
-  "name": "以太狗",
-  "short_name": "etherdog",
+  "name": "云加密钱包",
+  "short_name": "云加密",
   "version": "4.5.33",
   "manifest_version": 2,
-  "author": "http://etherdog.io",
+  "author": "http://yunjiami.com",
   "description": "安全可靠的以太坊钱包，metamask的中文精简版",
   "commands": {
     "_execute_browser_action": {
@@ -37,7 +37,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "以太狗",
+    "default_title": "云加密钱包",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -60,7 +60,7 @@
     "clipboardWrite",
     "http://localhost:8545/",
     "https://*.infura.io/",
-    "http://*.etherdog.io/"
+    "http://*.yunjiami.com/"
   ],
   "web_accessible_resources": [
     "inpage.js"
@@ -68,7 +68,7 @@
   "externally_connectable": {
     "matches": [
       "https://metamask.io/*",
-      "http://etherdog.io/*"
+      "http://yunjiami.com/*"
     ]
   }
 }

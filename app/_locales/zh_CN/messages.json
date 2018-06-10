@@ -35,7 +35,7 @@
   },
   "appName": {
      "description": "The name of the application",
-     "message": "以太狗"
+     "message": "云加密钱包"
   },
   "approved": {
      "message": "批准"
@@ -75,16 +75,16 @@
      "message": "从Dharma借贷(测试版)"
   },
   "builtInCalifornia": {
-     "message": "以太狗由成都南山南科技有限公司开发并维护。"
+     "message": "云加密钱包由成都南山南科技有限公司开发并维护。"
   },
   "buy": {
      "message": "购买"
   },
   "buyCoinbase": {
-     "message": "在Coinbase上购买"
+     "message": "从云加密交易所兑换"
   },
   "buyCoinbaseExplainer": {
-     "message": "Coinbase是大型数字货币交易所，中国用户无法使用。"
+     "message": "如果你拥有其他加密货币，你可以通过云加密交易所兑换Eth到云加密钱包钱包。"
   },
   "ok": {
    "message": "好的"
@@ -117,7 +117,7 @@
    "message": "继续"
  },
  "continueToCoinbase": {
-   "message": "继续访问Coinbase"
+   "message": "使用云加密交易所兑换"
  },
  "contractDeployment": {
    "message": "部署合约"
@@ -190,7 +190,7 @@
    "message": "默认网络是以太坊主网。"
  },
  "denExplainer": {
-   "message": "DEN用你的密码加密的以太狗钱包。"
+   "message": "DEN用你的密码加密的云加密钱包钱包。"
  },
  "deposit": {
    "message": "存入"
@@ -218,7 +218,7 @@
    "message": "从ShapeShift兑换"
  },
  "depositShapeShiftExplainer": {
-   "message": "如果你拥有其他加密货币，你可以通过ShapeShift兑换Eth到以太狗钱包。"
+   "message": "如果你拥有其他加密货币，你可以通过ShapeShift兑换Eth到云加密钱包钱包。"
  },
  "details": {
    "message": "详情"
@@ -362,7 +362,7 @@
    "message": "怎样转入Eth？"
  },
   "holdEther": {
-     "message": "以太狗帮助你管理Eth和代币，并充当与去中心化应用（Dapp）交互的桥梁。"
+     "message": "云加密钱包帮助你管理Eth和代币，并充当与去中心化应用（Dapp）交互的桥梁。"
   },
   "import": {
      "description": "Button to import an account from a selected file",
@@ -474,7 +474,7 @@
    "message": "消息"
  },
  "metamaskDescription": {
-   "message": "以太狗是开源的以太坊浏览器插件。"
+   "message": "云加密钱包是开源的以太坊浏览器插件。"
  },
   "min": {
      "message": "最小值"
@@ -486,7 +486,7 @@
    "message": "必须选择一个代币。"
  },
   "needEtherInWallet": {
-     "message": "使用以太狗操作去中心化应用（DAPP），需要有Eth以太币。"
+     "message": "使用云加密钱包操作去中心化应用（DAPP），需要有Eth以太币。"
   },
   "needImportFile": {
      "description": "User is important an account and needs to add a file to continue",
@@ -818,7 +818,7 @@
      "message": "代币缩写"
   },
   "tokenWarning1": {
-     "message": "管理通过以太狗钱包内地址购买的代币。你使用其他地址购买代币将不会在这里显示。"
+     "message": "管理通过云加密钱包钱包内地址购买的代币。你使用其他地址购买代币将不会在这里显示。"
   },
   "total": {
      "message": "总金额"
@@ -840,7 +840,7 @@
      "message": "无法加载代币余额，你可以在这里查看 "
   },
   "twelveWords": {
-     "message": "助记词（十二个小写英文单词）是恢复以太狗钱包的唯一途径。\n请妥善记录并报告，谨防丢失或者泄露。"
+     "message": "助记词（十二个小写英文单词）是恢复云加密钱包钱包的唯一途径。\n请妥善记录并报告，谨防丢失或者泄露。"
   },
   "typePassword": {
      "message": "请输入密码"
@@ -849,7 +849,7 @@
      "message": "欢迎使用新版界面"
   },
   "uiWelcomeMessage": {
-     "message": "你现在正在使用新版以太狗界面。请尝试发送代币等新功能，有任何问题请告知我们。"
+     "message": "你现在正在使用新版云加密钱包界面。请尝试发送代币等新功能，有任何问题请告知我们。"
   },
   "unapproved": {
      "message": "未批准"
@@ -889,13 +889,13 @@
      "message": "查看地址"
   },
   "visitWebSite": {
-     "message": "以太狗网站"
+     "message": "云加密钱包网站"
   },
   "warning": {
      "message": "警告"
   },
   "welcomeBeta": {
-     "message": "欢迎使用以太狗"
+     "message": "欢迎使用云加密钱包"
   },
   "whatsThis": {
      "message": "使用提示"
@@ -913,13 +913,13 @@
     "message": "发送金额"
   },
   "UnderDevelopment": {
-    "message": "以太狗仍处于持续开发中，我们将尽力提供可靠产品。如遇到产品故障，也请您谅解。"
+    "message": "云加密钱包仍处于持续开发中，我们将尽力提供可靠产品。如遇到产品故障，也请您谅解。"
  },
   "CurrentLanguage": {
     "message": "语言"
  },
  "EtherDogVersion": {
-   "message": "以太狗 版本号"
+   "message": "云加密钱包 版本号"
  },
  "OK": {
    "message": "好的"
@@ -949,7 +949,7 @@
   "message": "没有搜到代币？可申请代币预置。"
  },
  "website": {
-  "message": "官网"
+  "message": "交易"
  },
  "dapp": {
   "message": "精品应用"
