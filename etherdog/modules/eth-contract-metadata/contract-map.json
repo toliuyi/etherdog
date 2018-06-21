@@ -47,6 +47,14 @@
     "decimals": 18,
     "Officialwebsite": "http://www.sunpower.io"   
   },
+    "0x6c7BBD8B6C32512Dd36D8EEcDB3Ed4429EB8a85D": {
+    "name": "Gene Nuggets",
+    "logo": "",
+    "erc20": true,
+    "symbol": "GNUS",
+    "decimals": 6,
+    "Officialwebsite": ""   
+  },
   "0xf8e386EDa857484f5a12e4B5DAa9984E06E73705": {
     "name": "Indorse Token",
     "logo": "indorseLogo.jpg",
